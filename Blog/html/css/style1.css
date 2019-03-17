@@ -1,0 +1,340 @@
+/*body {    
+    margin-top:77px;
+    text-rendering: optimizeLegibility; 
+    -webkit-font-smoothing: antialiased;    
+}
+
+/* TYPOGRAPHY */
+/*h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-align:center;
+    text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 60px;
+    line-height:80px;
+    margin:0px;
+    padding:0px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-align:center;
+    text-transform: uppercase;
+	font-size: 48px;
+    line-height:72px;
+    margin:0px;
+    padding:0px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-align:center;
+    text-transform: uppercase;
+	font-size: 36px;
+    line-height:54px;
+    margin:0px;
+    padding:0px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-align:center;
+    text-transform: uppercase;
+	font-size: 18px;
+    line-height:27px;
+    margin:0px;
+    padding:0px;
+}
+
+a {
+    color:#f26600;
+}
+
+a:hover {
+    color:#f26600;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    text-align:center;
+	font-size: 16px;
+    line-height:25px;
+    margin:0px;
+    padding:0px;
+    margin-top:25px;
+    opacity:0.7;
+}
+
+blockquote p {
+    font-family: 'Merriweather', serif;
+    font-weight:400;
+    font-style:italic;
+    text-align:center;
+    font-size: 24px;
+    line-height:36px;
+    margin:0px;
+    padding:0px;
+    opacity:1;
+}
+
+blockquote  {
+    margin:0px;
+    padding:0px;
+}
+
+.tlt  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-align:center;
+    text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 60px;
+    line-height:80px;
+    margin:0px;
+    padding:0px;
+    color:white;
+}
+*/
+
+/* //TYPOGRAPHY */
+
+
+
+
+/*##################################################################*/
+/* NAVIGATION - Desktop ############################################*/
+/*##################################################################*/
+
+nav {
+    position:fixed;
+    margin:0px;
+    padding:0px;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 77px;
+    background-color:white;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(23, 23, 23, 0.24);
+    box-shadow: 0px 1px 0px 0px rgba(23, 23, 23, 0.24);
+    z-index:200;
+}
+
+nav #logo {    
+    margin-top:27px;
+    padding:0px; 
+    display: inline-block;
+}
+
+nav #logo a {
+    outline: none;
+}
+
+
+#navigation {
+    float:right;
+    
+}
+
+#navigation ul {
+    float:right;
+    list-style: none;
+}
+
+#navigation ul li {
+    float:left;   
+}
+
+#navigation a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #6e6e6e;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0,5px;
+	font-size: 13px;
+    margin-left:42px;
+    margin-top:15px;
+}
+
+#navigation a:hover,
+#navigation a:focus {
+	outline: none;
+}
+
+#navigation a {
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+#navigation a:focus::before,
+#navigation a:hover::before
+{
+	color: #f26600;
+	
+}
+
+#navigation a:hover,
+#navigation a:focus {
+	color: #f26600;
+}
+
+#sections .current a {
+    color: #f26600;    
+}
+
+/* //NAVIGATION - Desktop*/
+
+
+
+/*##################################################################*/
+/* NAVIGATION - Mobile ############################################*/
+/*##################################################################*/
+
+.cbp-spmenu {
+	background: #3c3f41;
+	position: fixed;
+    width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+    left: -240px;
+    text-align:center;
+}
+
+.cbp-spmenu h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight:700;
+	color: #2d2e30;
+	font-size: 20px;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #3c3f41;
+}
+
+.cbp-spmenu a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight:700;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+    border-bottom: 1px solid #434546;
+	padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cbp-spmenu a:hover {
+	background: #2d2e30;
+}
+
+.cbp-spmenu a:active {
+	background: #2d2e30;
+	color: #8d9b9f;
+}
+
+.cbp-spmenu.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#navigation_mobile { 
+    float:right;
+    display: inline-block;
+}
+#cbp-spmenu ul{
+    list-style: none;
+    padding-left:0px;   
+}
+
+#showLeft {
+    float:right;
+    margin-top:19px;
+}
+
+.button_nav {
+	background-color:#ffffff;
+	-webkit-border-top-left-radius:100px;
+	-moz-border-radius-topleft:100px;
+	border-top-left-radius:100px;
+	-webkit-border-top-right-radius:100px;
+	-moz-border-radius-topright:100px;
+	border-top-right-radius:100px;
+	-webkit-border-bottom-right-radius:100px;
+	-moz-border-radius-bottomright:100px;
+	border-bottom-right-radius:100px;
+	-webkit-border-bottom-left-radius:100px;
+	-moz-border-radius-bottomleft:100px;
+	border-bottom-left-radius:100px;
+	text-indent:0;
+	border:2px solid #f2b701;
+	display:inline-block;
+	color:#f2b701;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	font-style:normal;
+	height:auto;
+	width:auto;
+	text-decoration:none;
+	text-align:center;
+    padding:5px;
+    padding-top:8px;
+    width:39px;
+    outline: none;
+    
+}
+
+.button_nav:hover {
+	background-color:#f7f9fa;
+}
+
+.button_nav:active {
+	position:relative;
+	top:1px;
+    
+}
+
+/* //NAVIGATION - Mobile*/
+
+/*##################################################################*/
+/* HOME ############################################################*/
+/*##################################################################*/
+
+#home {
+    height:574px;
+    width:100%;
+    background-color: #f2b701;
+    background-image: url(../images/home-bg.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow-y:hidden;
+    text-align:center;
+    position:relative;
+}
+
+#home h1, #home blockquote {
+    color:white;
+}
+#home blockquote {
+    margin-top:165px;
+}
+
+/* Button Learn More */

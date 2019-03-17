@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OrDomain - Responsive HTML5 WHMCS Hosting Template</title>
+
+    <!-- ====Favicons==== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    
+    
+    <!-- ====Google Font Stylesheet==== -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- ====Font Awesome Stylesheet==== -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- ====Bootstrap Stylesheet==== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ====Main Stylesheet==== -->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- ====Responsive Stylesheet==== -->
+    <link href="css/responsive-style.css" rel="stylesheet">
+
+    <!-- ====Main Color Scheme CSS==== -->
+    <link href="css/main-color-1.css" rel="stylesheet" type='text/css' id="mainColorScheme">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="preloader--bounce">
+            <div class="preloader-bouncer--1"></div>
+            <div class="preloader-bouncer--2"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+        <!-- Navigation Area Start -->
+        <nav id="navigation">
+            <div class="contact-bar">
+                <div class="container">
+                    <div class="social-icons pull-left">
+                        <ul class="nav nav-tabs">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-bar--text pull-left">
+                        <p><a href="mailto:support@example.com"><i class="fa fm fa-envelope-o"></i>support@example.com</a></p>
+                    </div>
+                    <div class="contact-bar--text pull-left">
+                        <p><a href="tel:+444000000000"><i class="fa fm fa-phone"></i>+444-000-000-000</a></p>
+                    </div>
+                    <div class="contact-bar--text text-capitalize pull-right">
+                        <p><a href="login.html"><i class="fa fm fa-user"></i>login</a><span class="slash">/</span><a href="http://billing.ywhmcs.com/register.php?systpl=OrDomain"><i class="fa fm fa-user-plus"></i>signup</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Logo Start -->
+                        <a class="navbar-brand" href="index.html"><span><i class="fa fa-globe"></i> Or</span>Domain</a>
+                        <!-- Logo End -->
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-right reset-padding">
+                        <!-- Navigation Links Start -->
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hosting <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shared-hosting.html">Shared</a></li>
+                                    <li><a href="reseller-hosting.html">Reseller</a></li>
+                                    <li><a href="vps-hosting-1.html">VPS Style 1</a></li>
+                                    <li><a href="vps-hosting-2.html">VPS Style 2</a></li>
+                                    <li><a href="dedicated-hosting-1.html">Dedicated Style 1</a></li>
+                                    <li><a href="dedicated-hosting-2.html">Dedicated Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="domains.html">Domains</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="datacenter.html">Datacenter</a></li>
+                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="affiliate.html">Affiliate</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li class="active"><a href="blog_sidebar-left.html">Blog Sidebar Left</a></li>
+                                    <li><a href="blog_sidebar-right.html">Blog Sidebar Right</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <!-- Navigation Links End -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Area End -->
+        <!-- Page Header Start -->
+        <div id="pageHeader" data-bg-img="img/background-img/page-header-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="section-title">
+                            <h2><span>lorem ipsum sit</span>lorem ipsum dolor sit amet</h2>
+                        </div>
+                        <div class="breadcrumb-holder">
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li class="active">lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        <!-- Blog Page Area Start -->
+        <div id="blogPage">
+            <div class="container">
+                <div class="row">
+                    <!-- Blog Sidebar Area Start -->
+                    <div class="col-md-4 blog-page-sidebar">
+                        <!-- Blog Search Widget Start -->
+                        <div class="widget search" data-form-validation="true">
+                            <form action="404.html" method="post">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Search" class="form-control" required>
+                                    <span class="input-group-addon">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Blog Search Widget End -->
+                        <!-- Blog Recent Posts Widget Start -->
+                        <div class="widget recent-items">
+                            <h2 class="widget-title">recent posts</h2>
+                            <div class="footer-thumb m-t-15">
+                                <div class="row-holder">
+                                    <div class="right-col">
+                                        <a class="footer-thumb-link" href="#">You shouldn't have to</a>
+                                        <p class="footer-thumb-text">You shouldn't have to take our word for it. You sdfd read what iYou shouldn't have to take our word for it. You sdfd read what i </p>
+                                        <span class="footer-thumb-date">Published ON: <span class="footer-thumb-text-italic">10 dec</span></span>
+                                    </div>
+                                </div>
+                                <div class="row-holder">
+                                    <div class="right-col">
+                                        <a class="footer-thumb-link" href="#">You shouldn't have to</a>
+                                        <p class="footer-thumb-text">You shouldn't have to take our word for it. You sdfd read what iYou shouldn't have to take our word for it. You sdfd read what i </p>
+                                        <span class="footer-thumb-date">Published ON: <span class="footer-thumb-text-italic">10 dec</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Recent Posts Widget End -->
+                        <!-- Blog Categories Widget Start -->
+                        <div class="widget categories">
+                            <h3 class="widget-title">categories</h3>
+                            <ul>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">UX Design</a></li>
+                                <li><a href="#">UI Design</a></li>
+                                <li><a href="#">UI Design</a></li>
+                                <li><a href="#">Flat Design</a></li>
+                            </ul>
+                        </div>
+                        <!-- Blog Categories Widget End -->
+                        <!-- Blog Archives Widget Start -->
+                        <div class="widget archives">
+                            <h3 class="widget-title">archives</h3>
+                            <ul>
+                                <li><a href="#">September 2015</a></li>
+                                <li><a href="#">October 2015</a></li>
+                                <li><a href="#">November 2015</a></li>
+                                <li><a href="#">December 2015</a></li>
+                                <li><a href="#">January 2016</a></li>
+                            </ul>
+                        </div>
+                        <!-- Blog Archives Widget End -->
+                        <!-- Blog Tags Widget Start -->
+                        <div class="widget tags">
+                            <h3 class="widget-title">tags</h3>
+                            <ul>
+                                <li><a href="#">business</a></li>
+                                <li><a href="#">agency</a></li>
+                                <li><a href="#">creative</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">coporate</a></li>
+                                <li><a href="#">website</a></li>
+                                <li><a href="#">business website</a></li>
+                                <li><a href="#">coporate website</a></li>
+                            </ul>
+                        </div>
+                        <!-- Blog Tags Widget End -->
+                        <!-- Tweets Widget Start -->
+                        <div class="widget latest-tweets-widget">
+                            <h4 class="widget-title">Latest Tweets</h4>
+                            <div id="sidebarTwitter" data-user-name="themelooks"></div>
+                        </div>
+                        <!-- Tweets Widget End -->
+                    </div>
+                    <!-- Blog Sidebar Area End -->
+                    <!-- Blog Content Area Start -->
+                    <div class="col-md-8 blog-page-content">
+                        <div class="post-item full-post">
+                            <!-- Post Image Start -->
+                            <div class="post-item-img">
+                                <img src="img/blog-img/post-details-1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <!-- Post Image End -->
+                            <!-- Post Meta Start -->
+                            <div class="post-meta clearfix">
+                                <div class="date">
+                                    <a href="#">
+                                        <i class="fa fa-calendar"></i>
+                                        April-5
+                                    </a>
+                                </div>
+                                <div class="comments">
+                                    <a href="#">
+                                        <span>2</span>
+                                        comments
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Post Meta End -->
+                            <!-- Post Content Start -->
+                            <div class="post-item-content link-color--child">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur odit, necessitatibus accusantium assumenda accusamus unde atque nisi sint fuga rem, ut aut reprehenderit ad tempora quisquam? A id fuga recusandae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus, eos repellat ea quam natus voluptatem quod velit et mollitia quaerat quas excepturi similique, porro illum consequatur. Aperiam, laudantium, repudiandae.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur odit, necessitatibus accusantium assumenda accusamus unde atque nisi sint fuga rem, ut aut reprehenderit ad tempora quisquam? A id fuga recusandae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus, eos repellat ea quam natus voluptatem quod velit et mollitia quaerat quas excepturi similique, porro illum consequatur. Aperiam, laudantium, repudiandae.</p>
+                                <blockquote>Aenean ut eros et nisl sagittis vestibulum. Morbi mattis ullamcorper velit. Etiam vitae tortor. Donec posuere vulputate arcu. Nullam accumsan lorem in dui.</blockquote>
+                                <p>Suspendisse feugiat. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Etiam feugiat lorem non metus. Vivamus quis mi. Donec vitae sapien ut libero venenatis faucibus. Phasellus gravida semper nisi. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.</p>
+                                <ul>
+                                    <li>Consectetur adipiscing elit vtae elit libero</li>
+                                    <li>Nullam id dolor id eget lacinia odio posuere erat a ante</li>
+                                    <li>Integer posuere erat dapibus posuere velit</li>
+                                </ul>
+                                <p>Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Fusce fermentum odio nec arcu. In auctor lobortis lacus. Fusce vel dui. Praesent turpis. Fusce fermentum odio nec arcu. Aenean commodo ligula eget dolor. Etiam iaculis nunc ac metus. Praesent blandit laoreet nibh. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Ut varius tincidunt libero. Donec id justo.</p>
+                                <p><i>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem.</i></p>
+                            </div>
+                            <!-- Post Content End -->
+                            <p><span class="post-category-text">CATEGORY:</span><a href="#" class="category-link">themelooks</a></p>
+
+                            <div class="tags">
+                                <ul>
+                                    <li><strong>Tags:</strong></li>
+                                    <li><a href="#" class="btn btn-custom">Awesome</a></li>
+                                    <li><a href="#" class="btn btn-custom">Blog</a></li>
+                                    <li><a href="#" class="btn btn-custom">ThemeLooks</a></li>
+                                    <li><a href="#" class="btn btn-custom">Creative</a></li>
+                                    <li><a href="#" class="btn btn-custom">ComeLooks</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="post-author-metadata">
+                                        <img src="img/blog-img/author.jpg" alt="">
+                                        <a href="#" class="post-author-name">Admin</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="post-social-links">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-feed"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-comments">
+                                <h2 class="post-comments-title">4 Comments</h2>
+                                <ul>
+                                    <li>
+                                        <div class="single-comment">
+                                            <div class="comment-thumb">
+                                                <a href="#" class="pull-left">
+                                                    <img src="img/blog-img/author.jpg" alt="User Image">
+                                                </a>
+                                                <div class="comment-meta pull-left">
+                                                    <a href="#">ThemeLooks</a> says:
+                                                    <div class="date">Februry 11, 2016 at 04.53 am</div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-text link-color--child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur.</div>
+                                            </div>
+                                            <a href="#" class="comment-reply btn btn-sm">Reply</a> 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="single-comment">
+                                                    <div class="comment-thumb">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="img/blog-img/author.jpg" alt="User Image">
+                                                        </a>
+                                                        <div class="comment-meta pull-left">
+                                                            <a href="#">ThemeLooks</a> says:
+                                                            <div class="date">Februry 11, 2016 at 04.53 am</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <div class="comment-text link-color--child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur.</div>
+                                                    </div>
+                                                    <a href="#" class="comment-reply btn btn-sm">Reply</a> 
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="single-comment">
+                                                            <div class="comment-thumb">
+                                                                <a href="#" class="pull-left">
+                                                                    <img src="img/blog-img/author.jpg" alt="User Image">
+                                                                </a>
+                                                                <div class="comment-meta pull-left">
+                                                                    <a href="#">ThemeLooks</a> says:
+                                                                    <div class="date">Februry 11, 2016 at 04.53 am</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <div class="comment-text link-color--child">Great Design! Like it :)</div>
+                                                            </div>
+                                                            <a href="#" class="comment-reply btn btn-sm">Reply</a> 
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="single-comment">
+                                                    <div class="comment-thumb">
+                                                        <a href="#" class="pull-left">
+                                                            <img src="img/blog-img/author.jpg" alt="User Image">
+                                                        </a>
+                                                        <div class="comment-meta pull-left">
+                                                            <a href="#">ThemeLooks</a> says:
+                                                            <div class="date">Februry 11, 2016 at 04.53 am</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <div class="comment-text link-color--child">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur.</div>
+                                                    </div>
+                                                    <a href="#" class="comment-reply btn btn-sm">Reply</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-comment-form">
+                                <h2 class="post-comments-title">Leave a Reaply</h2>
+                                <div class="post-comment-form-group" data-form-validation="true">
+                                    <!-- Comment Form Start -->
+                                    <form action="#" method="post" id="postCommentForm">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="text" name="name" placeholder="Name" class="form-control" required />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="email" name="email" placeholder="Email" class="form-control" required />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" name="website" placeholder="Website" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <textarea cols="30" name="comments" rows="6" placeholder="Comments" class="form-control" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="submit" value="Submit" class="form-control submit-btn" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Comment Form End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Content Area End -->
+                </div>
+            </div>
+        </div>
+        <!-- Blog Page Area End -->
+        <!-- Footer Area Start -->
+        <div id="footer">
+            <!-- Footer Widgets Start -->
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- About Widget Start -->
+                            <div class="about">
+                                <h4 class="title">about company</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, doloribus, inventore. Aspernatur eius exercitationem.</p>
+                                <address>
+                                    <p><i class="fa fa-fw fa-map-marker"></i> Shewrapara Bus Stand, Dhaka 1216</p>
+                                    <p><i class="fa fa-fw fa-phone"></i> +88017-0010-010</p>
+                                    <p><i class="fa fa-fw fa-envelope"></i> info@example.com</p>
+                                </address>
+                            </div>
+                            <!-- About Widget End -->
+                        </div>
+                        <div class="col-md-3">
+                            <!-- Useful Links Widget Start -->
+                            <div class="useful-links">
+                                <h4 class="title">useful links</h4>
+                                <ul>
+                                    <li><i class="fa fa-angle-right"></i><a href="#">Lorem ipsum dolor sit</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="#">Lorem ipsum dolor sit</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="#">Lorem ipsum dolor sit</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="#">Lorem ipsum dolor sit</a></li>
+                                    <li><i class="fa fa-angle-right"></i><a href="#">Lorem ipsum dolor sit</a></li>
+                                </ul>
+                            </div>
+                            <!-- Useful Links Widget End -->
+                        </div>
+                        <div class="col-md-3">
+                            <!-- Recent Posts Widget Start -->
+                            <div class="recent-posts">
+                                <h4 class="title">Recent Posts</h4>
+                                <div class="recent-post-item">
+                                    <div class="image">
+                                        <img src="img/blog-img/recent-post-1.jpg" alt="" class="image">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="heading"><a href="#" class="link-white">lorem ipsum dolor</a></h5>
+                                        <p class="summery">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="meta">By <a href="#">John Deo</a> / <a href="#">Feb 15</a></p>
+                                    </div>
+                                </div>
+                                <div class="recent-post-item">
+                                    <div class="image">
+                                        <img src="img/blog-img/recent-post-2.jpg" alt="" class="image">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="heading"><a href="#" class="link-white">lorem ipsum dolor</a></h5>
+                                        <p class="summery">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="meta">By <a href="#">John Deo</a> / <a href="#">Feb 15</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Recent Posts Widget End -->
+                        </div>
+                        <div class="col-md-3">
+                            <!-- Twitter Widget Start -->
+                            <div class="twitter">
+                                <div id="footerTwitter" data-user-name="themelooks"></div>
+                            </div>
+                            <!-- Twitter Widget End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!-- Payment Methods Start -->
+                                <div class="payment-methods">
+                                    We Accept: <img src="img/payment-methods.png" alt="">
+                                </div>
+                                <!-- Payment Methods Start -->
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Social Links Start -->
+                                <div class="social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Social Links Start -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widgets End -->
+            <!-- Copyright Start -->
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright 2018 &copy; <a href="#">OrDomain</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+            <!-- Copyright End -->
+        </div>
+        <!-- Footer Area End -->
+        <!-- Back To Top Button Start -->
+        <div class="back-to-top">
+            <button><i class="fa fa-angle-up"></i></button>
+        </div>
+        <!-- Back To Top Button End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- ====jQuery Core Script==== -->
+    <script src="js/jquery-2.2.2.min.js"></script>
+
+    <!-- ====Bootstrap Core Script==== -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- ====jQuery Validation Plugin Script==== -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- ====Isotope Plugin Script==== -->
+    <script src="js/isotope.min.js"></script>
+    
+    <!-- ====Twitter Widget==== -->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    
+    <!-- ====RetinaJS JavaScript==== -->
+    <script src="js/retina.min.js"></script>
+
+    <!-- ====Main Script==== -->
+    <script src="js/main.js"></script>
+</body>
+</html>

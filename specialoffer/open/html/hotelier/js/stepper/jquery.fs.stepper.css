@@ -1,0 +1,134 @@
+/* 
+ * Stepper v3.0.7 - 2014-05-07 
+ * A jQuery plugin for cross browser number inputs. Part of the Formstone Library. 
+ * http://formstone.it/stepper/ 
+ * 
+ * Copyright 2014 Ben Plum; MIT Licensed 
+ */ 
+
+.stepper {
+    margin: 0px 0px 10px;
+    overflow: hidden;
+    position: relative;
+    width: 156px;
+    height: 200px;
+	font-family:Roboto;
+
+}
+
+.stepper::after {
+    content: "";
+	background:#00a39b;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.stepper .stepper-input:hover ,
+.stepper .stepper-input:focus ,
+.stepper .stepper-input {
+    background: #f3ebd7;
+	border:none;
+    color: #333;
+    font-size: 50px;
+    margin: 0px;
+    overflow: hidden;
+    width: 156px;
+    z-index: 49;
+    -moz-appearance: textfield;
+    height: 110px;
+	margin-top:32px;
+	line-height:110px;
+	text-align:center;
+	font-weight:bold;
+	font-family:Roboto;
+}
+
+	.stepper .stepper-input::-webkit-inner-spin-button,
+	.stepper .stepper-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+	.stepper .stepper-input:focus { background-color: #f3ebd7; }
+	.stepper .stepper-arrow { background: url(jquery.fs.stepper-arrows.png) no-repeat; border:none; cursor: pointer; display: block; height: 50%; position: absolute; right: 0; text-indent: -99999px; width: 20px; z-index: 5000; }
+
+
+.stepper .stepper-arrow.up {
+    background-position: center -4px;
+    border-bottom: medium none;
+    top: 8px;
+    height: 7px;
+	right:6px;
+
+}
+
+.stepper .stepper-arrow.down {
+    background-position: center -24px;
+    top: 18px;
+    height: 7px;
+    right: 6px;
+}
+
+	@media screen and (min-width: 740px) {
+		.stepper:hover .stepper-input { background-color: #f3ebd7; }
+
+		.stepper .stepper-step:hover { background-color: #f3ebd7; }
+
+		.stepper.disabled .stepper-arrow { background: #fff; border-color: #eee; cursor: default; }
+	}
+
+	.stepper.disabled .stepper-input { background: #f3ebd7; border-color: none; color: #ccc; }
+	.stepper.disabled .stepper-arrow { background: #f3ebd7; border-color: none; cursor: default; }
+
+
+.arrive-date {
+    position: relative;
+    height: 142px;
+	display:inline-block;
+	margin-right:16px;
+}
+
+.arrive-date i {
+    position: absolute;
+    top: 35px;
+    z-index: 999;
+    left: 15px;
+    color: #f3ebd7;
+    font-size: 16px;
+}
+
+.ad-month {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    z-index: 9999;
+    height: 110px;
+    width: 156px;
+    display: table;
+    text-align: center;
+    padding: 0;
+    line-height: 65px;
+}
+
+.people-count {
+display: inline-block;
+}
+
+.people-count .ad-month ,
+.people-count .stepper ,
+.people-count .stepper-input {
+    width: 88px;
+}
+
+.people-count .ad-month {
+   top: 23px;
+}
+
+.people-count .arrive-date {
+    margin-right: 1px;
+}
+

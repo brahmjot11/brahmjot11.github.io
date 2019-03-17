@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Blog Single - Riven</title>
+<!-- meta data tags & loading css files -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link type="image/x-icon" href="images/favicon.ico" rel="icon">
+<link href="css/pe-icon/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
+<link href="css/plugins.css" rel="stylesheet" type="text/css" />
+<link href="css/theme.css" rel="stylesheet" type="text/css" />
+</head>
+<body class=" blog single-post">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header header-v3 bg-gradient">
+			<!-- header 3-->
+			<div class="header-top">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2 col-sm-12 col-xs-12">
+							<h1 class="header-logo">                    
+								<a href="index.html" rel="home">
+								<img width="120" height="95" alt="Riven" src="images/logo.png" class=""></a>
+							</h1>
+						</div>
+						<div class="col-md-10 col-sm-12 col-xs-12">
+							<nav id="site-navigation" class="main-navigation">
+								<button class="menu-toggle"><i class="fa fa-bars"></i> <span> Menu</span></button>
+								<div class="right_header">
+									<ul>
+										<li class="customlinks">
+											<div class="search-block-top">        
+												<span onclick="toggleFilter(this);" class="btn-search"><i class="fa fa-search"></i></span>
+												<div class="top-search content-filter">
+													<form action="#" class="woocommerce-product-search product-search" method="get">
+														<input type="search" title="Search for:" name="s" value="" placeholder="Search Products…" class="search-field placeholder" id="woocommerce-product-search-field">
+														<input type="submit" value="Search" class="submit search-input">
+														<button class="submit btn-search" type="submit">
+															<i class="fa fa-search"></i>
+														</button>
+														<input type="hidden" value="product" name="post_type">
+													</form>
+												</div>
+											</div>
+										</li>
+										<li class="customlinks">
+											<a onclick="toggleFilter(this)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+												<i class="fa fa-user"></i>
+											</a>
+											<div class="dib header-profile dropdown-menu content-filter">
+												<ul>
+													<li><a href="my-account.html">My Account</a></li>
+													<li><a href="login.html">Logout</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="customlinks">
+											<div id="mini-cart" class="mini-cart">
+												<div class="dib mini-cart header-cart">
+													<a href="javascript:void(0);" onclick="toggleFilter(this);" class="cart_label">
+														<i aria-hidden="true" class="fa fa-shopping-basket"></i>
+														<p class="number-product">2</p>
+													</a>
+													<div class="cart-block content-filter">
+														<div class="widget_shopping_cart_content">
+															<div class="wrap-mini-cart">
+																<ul class="cart_list product_list_widget ">
+																	<li class="mini_cart_item">
+																		<a title="Remove this item" class="remove remove-product" href="#"><i class="fa fa-close"></i></a>
+																		<a class="cart-images" href="#">
+																			<img width="80" height="80" alt="product_10" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" src="images/150x150.jpg">                           
+																		</a>
+																		<div class="cart-info">
+																			<div class="product-name">
+																				<a href="">Man on the wall</a>
+																				<div class="qty-cart">
+																					<span class="quantity">1 ×</span>                                    
+																					<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span></span>
+																				</div>
+																			</div>
+																		</div>
+																	</li>
+																	<li class="mini_cart_item">
+																		<a title="Remove this item" class="remove remove-product" href="#"><i class="fa fa-close"></i></a>
+																		<a class="cart-images" href="#">
+																			<img width="80" height="80" alt="product_10" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" src="images/150x150.jpg">                           
+																		</a>
+																		<div class="cart-info">
+																			<div class="product-name">
+																				<a href="">Airplane for Business</a>
+																				<div class="qty-cart">
+																					<span class="quantity">1 ×</span>                                    
+																					<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>40.00</span></span>
+																				</div>
+																			</div>
+																		</div>
+																	</li>
+																</ul>
+																<div class="cart-actions">
+																	<p class="total">
+																		<span>Total:</span> 
+																		<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>70.00</span></span>
+																	</p>
+																</div>
+																<div class="cart-btn">
+																	<a class="btn button btn-default wc-forward" href="cart.html">View Cart</a>
+																	<a class="btn button btn-default checkout wc-forward" href="checkout.html">Checkout</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="menu-primary-menu-container">
+									<ul id="menu-primary-menu" class="mega-menu">
+										<li class="menu-item current-menu-parent menu-item-has-children page_item_has_children">
+											<a href="index.html">Home</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="index.html">App Landing</a>
+												</li>
+												<li class="menu-item">
+													<a href="app-landing-color.html">App Landing Color</a>
+												</li>
+												<li class="menu-item">
+													<a href="game-landing.html">Game Landing</a>
+												</li>
+												<li class="menu-item">
+													<a href="store-shop.html">Store Shop</a>
+												</li>
+												<li class="menu-item">
+													<a href="startup.html">Startup</a>
+												</li>
+												<li class="menu-item">
+													<a href="bussiness.html">Bussiness</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="service-details-1.html">Services</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="service-details-1.html">Service Details 1</a>
+												</li>
+												<li class="menu-item">
+													<a href="service-details-2.html">Service Details 2</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="event.html">Events</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="event.html">Event </a>
+												</li>
+												<li class="menu-item">
+													<a href="event-detail.html">Event Details</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="portfolio.html">Portfolio</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="portfolio.html">Portfolio</a>
+												</li>
+												<li class="menu-item">
+													<a href="portfolio-details.html">Single Portfolio</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="blog.html">Blog</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="blog.html">Blog</a>
+												</li>
+												<li class="menu-item">
+													<a href="blog-single-post.html">Blog Single </a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="shop.html">Shop</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="shop-left-sidebar.html">Shop Left Sidebar</a>
+												</li>
+												<li class="menu-item">
+													<a href="shop-right-sidebar.html">Shop Right Sidebar</a>
+												</li>
+												<li class="menu-item">
+													<a href="product-details.html">Product Detail</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="about-us.html">About Us</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="about-us.html">About Us</a>
+												</li>
+												<li class="menu-item">
+													<a href="about-us-2.html">About Us 2</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children page_item_has_children">
+											<a href="contact-us.html">Contact Us</a>
+											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
+											<ul class="children dropdown-menu">
+												<li class="menu-item current-menu-item current_page_item">
+													<a href="contact-us.html">Contact Us</a>
+												</li>
+												<li class="menu-item">
+													<a href="contact-us-2.html">Contact Us 2</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div>
+				</div>    
+			</div>
+		</header >
+		<!-- Breadcrumb -->
+		<div class="bg-gradient side-breadcrumb text-center breadcrumb_3 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="page-title">
+							<h1> <span>Blog</span> Single Post</h1>
+						</div>
+						<ul class="breadcrumb">
+							<li>
+								<a class="home" href="#">Home</a>
+							</li>
+							<li>
+								<a class="home" href="#">Blog</a>
+							</li>
+							<li>Blog Single Post</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- the content -->
+		<div id="main" class="wrapper">	
+			<div id="primary" class="content-area">
+				<!-- Blog content-->
+				<div class="container">
+					<div class="row">
+						<div class="main-content col-md-9 col-sm-12 col-xs-12 main-sidebar">
+							<div class="blog-content">
+								<div class="blog-main">
+									<h3 class="title_blog"> Android released</h3>
+									<div class="blog_info blog-info-style">
+										<span class="blog-date">
+											 <i class="fa fa-calendar"></i>
+											24 March 2016                        
+										 </span>
+										<span class="blog-author">
+											<a href="#">
+												admin                           
+											</a>
+										</span> 
+										<span class="blog-category"><a href="#" rel="category tag">Web Designer</a></span>
+									</div>
+									<div class="blog-img">
+										<img src="images/848x600.jpg" class="attachment-riven-blog-single size-riven-blog-single wp-post-image" alt="img-blog-5">    
+									</div>
+									<div class="blog_post_content">
+										<div class="blog_post_desc">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam risus lorem, sollicitudin id lobortis ac, cursus eget odio. Maecenas vitae ultrices odio. Maecenas non velit at sapien laoreet fringilla vel ut enim. Curabitur malesuada laoreet lectus sed ultrices. Morbi elementum vulputate tempor. Praesent vel sem dignissim, ornare elit et, dignissim nisl. Maecenas dignissim consectetur augue, vitae fermentum tortor convallis in. Fusce in vulputate urna. Nam volutpat diam imperdiet, porttitor urna vitae, imperdiet arcu.</p>
+											<p>Ut consequat neque et risus accumsan luctus. Vestibulum auctor molestie turpis, et pulvinar mauris lacinia vel. Nam id pellentesque leo. Nam quam urna, iaculis ut faucibus non, vehicula ultricies eros. Nulla sodales vitae magna et hendrerit. Phasellus et diam vel diam vulputate porta. Morbi non porttitor eros. Sed in lorem dolor. Aliquam erat volutpat. Cras tempus bibendum dui ut eleifend. Donec pretium, arcu eget pretium imperdiet, urna risus vulputate eros, ut consectetur sem lectus eget metus. Curabitur id lorem maximus, posuere odio eu, semper tellus.</p>
+											<blockquote><p>Integer fermentum arcu at turpis venenatis tempor. Aenean sed sem leo. Vestibulum vehicula nibh nisl, a aliquet magna vehicula id. Maecenas fermentum diam pulvinar dolor suscipit, eget lacinia ipsum laoreet. Donec quis tristique tellus. Quisque tincidunt bibendum turpis, ultrices tincidunt orci porta sed. Cras ornare neque leo, a egestas mi viverra vel. Phasellus porttitor, libero quis volutpat cursus, magna dui laoreet erat, quis vestibulum nisl ex in mi.</p></blockquote>
+											<p>Proin vitae gravida nunc. Donec fermentum augue vel semper consectetur. Phasellus sit amet sem urna. Etiam lacus sapien, hendrerit sit amet fringilla tincidunt, suscipit vel mauris. Maecenas porta aliquet quam, a consectetur lectus aliquam ut. Ut consequat velit eu elit vehicula ullamcorper. Duis vitae odio est. Pellentesque vehicula bibendum eros in iaculis. Sed non ipsum eleifend, blandit lacus at, feugiat enim. Nam tristique arcu nec dictum faucibus. Morbi nunc mi, aliquet et viverra sed, mattis et lacus. Sed convallis viverra interdum. Pellentesque vestibulum fringilla consequat. Proin sit amet faucibus lectus. Phasellus sit amet purus rhoncus, ultrices mauris sit amet, pellentesque mi.</p>
+										</div>
+										<div class="tagcloud">
+											<a href="#" rel="tag">android</a>
+											<a href="#" rel="tag">app</a>
+											<a href="#" rel="tag">apple store</a>
+											<a href="#" rel="tag">application</a>
+											<a href="#" rel="tag">game</a>
+											<a href="#" rel="tag">ios</a>
+											<a href="#" rel="tag">mobile</a>                      
+										</div>
+									   <div class="author_blog">
+											<div class="avatar_author">
+												<img src="images/150x150.jpg" width="96" height="96" alt="admin">        
+											</div>
+											<div class="right_info_author">
+												<div class="name_author">admin </div>
+												 <div class="job_author">
+													<p>Founder SKU</p>
+												</div>
+												 <div class="desc_author">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta. Duis fringilla sit amet diam in sodales. Mauris condimentum sapien eget ex aliquam tincidunt.            
+												</div>
+												<div class="social_author">
+													<ul class="social-networks">
+														<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+														<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+														<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+														<li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+													</ul>
+												</div>
+											</div>        
+										</div>
+									</div>  
+								</div>
+								<div class="blog-comments">
+									<div id="comments" class="comments-area">
+										<h3 class="number-comments title-border">
+											3<span> Comments</span>		
+										</h3>
+										<div class="scrollbar-inner scrollbar-comment">
+											<ul class="commentlist">
+										    	<li class="comment parent">
+						            				<div id="div-comment-4" class="comment-body">
+						           						<div class="comment-author vcard">
+						                       				 <a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+						        						</div>
+						    							<div class="box-comment"> 
+						        							<div class="name_author">admin</div>    
+						       								<div class="comment-meta">
+						            							28 March 2016  7:20 am       
+						            						 </div>	
+												            <div class="comment-content">
+												                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta. Duis fringilla sit amet diam in sodales. Mauris condimentum sapien eget ex aliquam tincidunt. </p>
+												            </div>
+												            <div class="reply">
+												            	<a rel="nofollow" class="button" href="#">Reply</a>        
+												            </div>
+						            					</div>    
+						                			</div>
+											        <ul class="children">
+													    <li class="comment odd">
+													        <div class="comment-body">
+													            <div class="comment-author">
+													                <a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+													        	</div>
+													    		<div class="box-comment"> 
+															        <div class="name_author">
+															            admin        </div>    
+															        <div class="comment-meta">
+															            28 March 2016  7:21 am        
+															        </div>
+															        <div class="comment-content">
+															            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta. Duis fringilla sit amet diam in sodales. Mauris condimentum sapien eget ex aliquam tincidunt. </p>
+															         </div>
+															        <div class="reply">
+															            <a rel="nofollow" class="button" href="#">Reply</a>   
+															        </div>
+															    </div>    
+													        </div>
+													    </li><!-- #comment-## -->
+													</ul><!-- .children -->
+												</li><!-- #comment-## -->
+											    <li class="comment">
+											        <div class="comment-body">
+											            <div class="comment-author">
+											                <a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+											        	</div>
+											    		<div class="box-comment"> 
+											        		<div class="name_author">admin </div>    
+											       			<div class="comment-meta">
+											            		28 March 2016  7:50 am        
+											            	</div>
+												            <div class="comment-content">
+												                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta. Duis fringilla sit amet diam in sodales. Mauris condimentum sapien eget ex aliquam tincidunt. </p>
+												            </div>
+											                <div class="reply">
+											            		<a rel="nofollow" class="button" href="#">Reply</a>        
+											            	 </div>
+											            </div>    
+											        </div>
+											    </li><!-- #comment-## -->
+						    					<li class="comment">
+						           					 <div class="comment-body">
+						           						 <div class="comment-author">
+						                        			<a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+						       							</div>
+						   								<div class="box-comment"> 
+						        							<div class="name_author">admin </div>    
+						        							<div class="comment-meta commentmetadata">
+						        								28 March 2016  9:49 am
+						        							</div>
+						            						<div class="comment-content">
+												                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta. Duis fringilla sit amet diam in sodales.</p>
+												            </div>
+						               					 	<div class="reply">
+						            							<a rel="nofollow" class="button" href="#" aria-label="Reply to admin">Reply</a>                    
+						            						</div>
+						            					</div>    
+						                			</div>
+						       					</li><!-- #comment-## -->
+											    <li class="comment">
+											        <div id="div-comment-20" class="comment-body">
+											            <div class="comment-author">
+											                 <a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+											        	</div>
+													    <div class="box-comment"> 
+													        <div class="name_author">
+													            admin       
+													        </div>    
+													        <div class="comment-meta commentmetadata">
+													            31 March 2016  7:57 am        
+													        </div>
+												            <div class="comment-content">
+												                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta.</p>
+												            </div>
+													        <div class="reply">
+													            <a rel="nofollow" class="button" href="#">Reply</a>
+													        </div>
+													    </div>    
+											         </div>
+											    </li><!-- #comment-## -->
+						   						 <li class="comment">
+						            				<div id="div-comment-24" class="comment-body">
+						            					<div class="comment-author">
+						                        			<a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+						        						</div>
+						   								 <div class="box-comment"> 
+						        							<div class="name_author">
+						            							admin        
+						            						</div>    
+						        							<div class="comment-meta commentmetadata">
+						            							4 April 2016  5:03 am        
+						            						</div>
+						            						<div class="comment-content">
+						                            		</div>
+						                					<div class="reply">
+						           								 <a rel="nofollow" class="button" href="#">Reply</a>                 
+						           							</div>
+						           						 </div>    
+						               				 </div>
+						       						 <ul class="children">
+						   								 <li class="comment">
+						            						<div id="div-comment-59" class="comment-body">
+						           								<div class="comment-author vcard">
+						                        					<a href="" class="tag"><img src="images/150x150.jpg" width="32" height="32" alt="admin"></a>
+						       									</div>
+						  										<div class="box-comment"> 
+						       										<div class="name_author">
+						           										 admin        
+						           									</div>    
+															        <div class="comment-meta commentmetadata">
+															            8 April 2016  8:40 am        
+															        </div>
+														            <div class="comment-content">
+														                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur lectus sed tincidunt porta.</p>
+														            </div>
+													                <div class="reply">
+													            		<a rel="nofollow" class="button" href="#" aria-label="Reply to admin">Reply</a>                    
+													            	</div>
+						            							</div>    
+						               					 	</div>
+						        						</li><!-- #comment-## -->
+													</ul><!-- .children -->
+												</li><!-- #comment-## -->
+											</ul>
+										</div>
+										<div class="comment-form row">
+											<div id="respond" class="comment-respond">
+												<h3 id="reply-title" class="comment-reply-title">Leave your comment  
+													<small><a rel="nofollow" href="#">Cancel reply</a></small>
+												</h3>				
+												<form action="#" method="post" id="commentform" class="comment-form">
+													<div class="comment-left-field col-md-6 col-sm-12 col-xs-12">
+														<p class="comment-form-author form-row form-row-first">
+															<input id="author" class="required placeholder" name="author" type="text" placeholder="Your name" value="" size="30" aria-required="true">
+														</p>
+														<p class="comment-form-email form-row">
+															<input id="email" class="required email placeholder" name="email" type="text" placeholder="Email Address" value="" size="30" aria-required="true">
+														</p>
+														<p class="comment-form-subject form-row form-row-last">
+															<input id="subject" class="subject placeholder" name="subject" type="text" placeholder="Subject" size="30" aria-required="true">
+														</p>
+													</div>
+													<div class="comment-right-field col-md-6 col-sm-12 col-xs-12 ">
+														<p class="comment-form-comment form-row form-row-wide">
+															<textarea id="comment" placeholder="Message" class="required placeholder" name="comment" cols="45" rows="4" aria-required="true"></textarea>
+														</p>
+													</div>
+													<p class="form-submit">
+														<input name="submit" type="submit" id="submit" class="btn btn-primary button submit" value="submit"> 
+														<input type="hidden" name="comment_post_ID" value="97" id="comment_post_ID">
+														<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+													</p>				
+												</form>
+											</div><!-- #respond -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12 col-xs-12 right-sidebar active-sidebar"><!-- main sidebar -->
+							<aside id="recent-posts-4" class="widget widget_post_blog">		
+								<h2 class="widget-title title-block">Recent Blog</h2>		
+								<ul class="blog-content">
+									<li class="blog-item">
+										<div class="blog-img hover-link ">
+											<a class="bg-gradient" href="blog-detail.html"><img width="82" height="82" alt="" src="images/150x150.jpg"></a>
+										</div>
+										<div class="blog-post-info">
+											<div class="blog-post-title">
+												<div class="post-name">
+													<a href="blog-detail.html">Amazing For Ios</a>
+												</div>
+												<div class="blog-info">
+													<div class="info">
+														<p><i class="fa fa-calendar"></i>20, Apr 2016</p>
+															<span class="comment"><a href="#"><i class="fa fa-comments"></i> 0</a>
+															</span>
+													</div>			
+												</div>
+											</div>						
+										</div>
+									</li>
+									<li class="blog-item">
+										<div class="blog-img hover-link ">
+											<a class="bg-gradient" href="blog-detail.html"><img width="82" height="82" alt="" src="images/150x150.jpg"></a>
+										</div>
+										<div class="blog-post-info">
+											<div class="blog-post-title">
+												<div class="post-name">
+													<a href="blog-detail.html">Apple IOS</a>
+												</div>
+												<div class="blog-info">
+													<div class="info">
+														<p><i class="fa fa-calendar"></i>20, Apr 2016</p>
+															<span class="comment"><a href="#"><i class="fa fa-comments"></i> 0</a>
+															</span>
+													</div>			
+												</div>
+											</div>						
+										</div>
+									</li>
+									<li class="blog-item">
+										<div class="blog-img hover-link ">
+											<a class="bg-gradient" href="blog-detail.html"><img width="82" height="82" alt="" src="images/150x150.jpg"></a>
+										</div>
+										<div class="blog-post-info">
+											<div class="blog-post-title">
+												<div class="post-name">
+													<a href="blog-detail.html">Android release</a>
+												</div>
+												<div class="blog-info">
+													<div class="info">
+														<p><i class="fa fa-calendar"></i>20, Apr 2016</p>
+															<span class="comment"><a href="#"><i class="fa fa-comments"></i> 0</a>
+															</span>
+													</div>			
+												</div>
+											</div>						
+										</div>
+									</li>
+								</ul>
+							</aside>		
+							<aside id="riven_social_widget-2" class="widget widget_riven_social_widget">	
+								<h2 class="widget-title title-block">Social Links</h2>      
+								<ul class="social-networks">
+									<li class="social-fb first"><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li class="social-gg"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li class="social-youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+								</ul>
+							</aside>
+							<aside id="search-3" class="widget widget_search">
+								<h2 class="widget-title title-block">Search</h2>
+								<form role="search" method="get" id="searchform" class="searchform product-search" action="#">
+									<div>
+										<input type="text" class="search-field placeholder" value="" placeholder="Search..." name="s" id="s">
+										<button type="submit" class="submit button search-btn"><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+							</aside>
+							<aside id="archives-3" class="widget widget_archive">
+				<h2 class="widget-title title-block">Archives</h2>		
+				<ul>
+					<li><a href="#">April 2016</a></li>
+					<li><a href="#">March 2016</a></li>
+				</ul>
+			</aside>
+			<aside id="text-6" class="widget widget_text">
+				<h2 class="widget-title title-block">Advertisment</h2>			
+				<div class="textwidget">
+					<div><img alt="adv" src="images/260x320.jpg">
+					</div>
+				</div>
+			</aside>    
+		</div>
+	</div>
+</div>
+				<!--Banner Bottom-->
+				<div class="banner-bottom bg-gradient">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12 left-banner">
+								<h3>Come and join us today!</h3>
+								<p>Discover a milion apps and games</p>
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12 right-banner"><a href="#">join Now</a></div>
+						</div>
+					</div>
+					<div class="spacer-35"></div>
+				</div>
+			</div>
+		</div>		
+		<footer  id="colophon" class="footer">
+			<!-- the footer -->
+			<div class="footer-v3">
+				<div class="footer-office">
+					<div class="footer-office-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<aside class="widget widget_text">
+										<div class="textwidget">
+											<img class="" src="images/logo.png" alt="Riven">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam risus lorem, sollicitudin id lobortis ac, cursus eget odio. Maecenas vitae ultrices odio. Maecenas non velit at sapien.
+												<br><br>
+												Curabitur malesuada laoreet lectus sed ultrices. Morbi elementum vulputate tempor.
+											</p>
+										</div>
+									</aside>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<aside class="widget widget_post_blog">
+										<h2 class="widget-title title-block">Recent Posts</h2>
+										<ul class="blog-content">
+											<li class="blog-item">
+												<div class="blog-img hover-link ">
+													<a href="#" class="bg-gradient">
+														<img width="82" height="82" src="images/150x150.jpg" alt="">
+													</a>						
+												</div>		
+												<div class="blog-post-info">
+													<div class="blog-post-title">
+														<div class="post-name">
+															<a href="#">Amazing For Ios</a>
+														</div>
+														<div class="blog-info">
+															<div class="info">
+																<p><i class="fa fa-calendar"></i>20, Apr 2016</p>
+																<span class="comment"><a href="#"><i class="fa fa-comments"></i> 0</a></span>
+															</div>			
+														</div>
+													</div>						
+												</div>
+											</li>
+											<li class="blog-item">
+												<div class="blog-img hover-link ">
+													<a href="#" class="bg-gradient">
+														<img width="82" height="82" src="images/150x150.jpg" alt="">
+													</a>						
+												</div>		
+												<div class="blog-post-info">
+													<div class="blog-post-title">
+														<div class="post-name">
+															<a href="#">App IOS</a>
+														</div>
+														<div class="blog-info">
+															<div class="info">
+																<p><i class="fa fa-calendar"></i>20, Apr 2016</p>
+																<span class="comment"><a href="#"><i class="fa fa-comments"></i> 0</a></span>
+															</div>			
+														</div>
+													</div>						
+												</div>
+											</li>
+											<li class="blog-item">
+												<div class="blog-img hover-link ">
+													<a href="#" class="bg-gradient">
+														<img width="82" height="82" src="images/150x150.jpg" alt="">
+													</a>						
+												</div>		
+												<div class="blog-post-info">
+													<div class="blog-post-title">
+														<div class="post-name">
+															<a href="#">Android released</a>
+														</div>
+														<div class="blog-info">
+															<div class="info">
+																<p><i class="fa fa-calendar"></i>20, Apr 2016</p>
+																<span class="comment"><a href="#"><i class="fa fa-comments"></i> 0</a></span>
+															</div>			
+														</div>
+													</div>						
+												</div>
+											</li>
+										</ul>
+									</aside>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<aside class="widget widget_tag_cloud" id="tag_cloud-2">
+										<h2 class="widget-title title-block">Tags</h2>
+										<div class="tagcloud">
+											<a title="2 topics" class="tag-link-9 tag-link-position-1" href="#">android</a>
+											<a title="2 topics" class="tag-link-5 tag-link-position-2" href="#">app</a>
+											<a title="2 topics" class="tag-link-8 tag-link-position-3" href="#">apple store</a>
+											<a title="2 topics" class="tag-link-7 tag-link-position-4" href="#">application</a>
+											<a title="2 topics" class="tag-link-6 tag-link-position-5" href="#">game</a>
+											<a title="2 topics" class="tag-link-10 tag-link-position-6" href="#">ios</a>
+											<a title="2 topics" class="tag-link-4 tag-link-position-7" href="#">mobile</a>
+										</div>
+									</aside>                                    
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3">
+									<aside class="widget form_widget">
+										<h2 class="widget-title title-block">Newsletter</h2>
+										<form method="post">
+											<div class="newsletter_1 title-block">
+												<h2>Join Our <span>Newsletter</span></h2>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+											</div>
+											<div class="newsletter_2 title-block">
+												<div class="bg-footer-2">
+													<div class="square square-1"></div>
+													<div class="square square-2"></div>
+													<div class="square square-3"></div>
+													<div class="square square-4"></div>
+													<div class="square square-5"></div>
+													<div class="square square-6"></div>
+												</div>
+												<h2 class="">Newsletter</h2>
+												<p>Lorem ipsum dolor sit amet, consectetur</p>
+											</div>
+											<div class="form-newletter">
+												<input type="email" required="" placeholder="Enter your email" name="EMAIL" class="input placeholder">
+												<input type="submit" value="Submit" class="submit hidden-startup">
+												<input type="submit" value="Our Newsletter" class="submit hidden-newsletter">
+											</div>
+										</form>
+									</aside>                                    
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12 text-left">
+								<div class="copyright">
+									<address>             
+										© Riven 2016. All Rights Reserved. Designed by <a href="#">AHT Studio</a> 
+									</address>
+								</div>    
+							</div>
+						</div>    
+					</div>    
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!--- define script files -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom-carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/cascade-slider.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<a class="scroll-to-top"><i class="fa fa-chevron-up"></i></a>
+</body>
+</html>
