@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>VCard - HTML Documentation</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Documentation extras -->
+        <link href="assets/css/docs.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <script type="text/javascript" src="assets/google-code-prettify/run_prettify.js"></script>
+    </head>
+    <body style="" data-twttr-rendered="true">
+        <a class="sr-only" href="#content">Skip navigation</a>
+
+        <!-- Docs master nav -->
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://themeforest.net/user/WPmines?ref=themeton" class="navbar-brand">VCard</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Getting started</a></li>
+                        <li><a href="#pagebuilder">Page Builder</a></li>
+                        <li><a href="#theme-options-panel">Customize Options</a></li>
+                        <li><a href="https://wpmines.ticksy.com/" target="_blank"><code>SUPPORT</code></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>Documentation</h1>
+                <p>An overview of VCard, how to install and use, theme options and examples, and more.</p>
+            </div>
+        </div>
+
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="bs-sidebar hidden-print affix-top" role="complementary">
+                        <ul class="nav bs-sidenav">
+                          <li><a href="#general">General</a></li>
+                          <li><a href="#package">What's in the template folder</a></li>
+                          <li><a href="#install">Install</a></li>
+                          <li><a href="#html">HTML structure</a></li>
+                          <li><a href="#css">CSS structure</a></li>
+                          <li><a href="#js">JS structure</a></li>
+                          <li><a href="#font">Font</a></li>
+                          <li><a href="#logo">Logo & Branding</a></li>
+                          <li><a href="#less">Less configure</a></li>
+                          <li><a href="#credits">Sources & Credits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9" role="main">
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="general">Raptish - Premium vCard/Resume HTML Template</h1>
+                          </div>
+                          <p>This is a beautiful vcard resume template that fits any CV and resume websites. You can use it for your info website developing.</p>
+                          <p>Thank you for purchasing this template.</p>
+                          <h4>Best regards, WPmines</h4>
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="package">What's in the template folder</h1>
+                          </div>
+                          <p>Template folder has following structure and you should find your files/libraries with this path.</p>
+                          <p>Every single html files have their own elements and you can combine or modify them for your need.</p>
+<pre class="prettyprint">                          
+    |-images
+    |-js
+    |-less
+    |-vendors
+    |---animsition
+    |---asPieProgress
+    |---bootstrap
+    |---font-awesome
+    404.html
+    about.html
+    blog-grid.html
+    blog.html
+    faq.html
+    index.html
+    portfolio-masonry.html
+    portfolio-single.html
+    portfolio.html
+    profile.html
+    resume.html
+    single.html
+    style.css
+                          </pre>
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="install">Install</h1>
+                          </div>
+                          <p>After you made all your changes in files, please do following on your FTP server and make it online.</p>
+                            <h4>FTP Upload:</h4>
+
+                          <ol>
+                                <li>Open up your FTP manager and connect to your hosting</li>
+                                <li>Browse to required directory (Normally public_html)</li>
+                                <li>Upload the files inside <strong>vcard</strong> folder.</li>
+                            </ol>
+                            <p>And then you can access your template on your main domain.</p>
+                      </div>
+
+
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="html">HTML structure</h1>
+                          </div>
+                          <p>HTML file has following structure and you can add or delete some of parts for your need.</p>
+                          <pre class="prettyprint">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      ...
+    &lt;/head&gt;
+    &lt;body&gt;
+
+
+    &lt;!-- Header
+    ================================================== --&gt;
+    &lt;header id="header"&gt;
+      ...
+    &lt;/header&gt;
+
+
+    &lt;!-- Main navigation section
+    ================================================== --&gt;
+    &lt;nav id="navigation"&gt;
+      ...
+    &lt;/nav&gt;
+
+
+    &lt;!-- Content section
+    ================================================== --&gt;
+    &lt;section class="content no-padding"&gt;
+      ...
+    &lt;/section&gt;
+
+
+    &lt;!-- Footer section
+    ================================================== --&gt;
+    &lt;footer id="footer" class="text-center"&gt;
+      ...
+    &lt;/footer&gt;
+    &lt;!-- End of Footer --&gt;
+
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+                          </pre>
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="css">CSS structure</h1>
+                          </div>
+                          <p>Every single html template fiiles include following css files at their top. And they styles everything on this template.</p>
+                          <pre class="prettyprint">
+  
+    &lt;!-- Bootstrap --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap-theme.min.css"&gt;
+
+    &lt;!-- Fontawesome --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css"&gt;
+
+    &lt;!-- Animsition --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="vendors/animsition/css/animsition.min.css"&gt;
+
+    &lt;!-- PieProgress --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="vendors/asPieProgress/progress.css"&gt;
+
+    &lt;!-- Stylesheet --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+
+                          </pre>
+                          <p>Final <strong>style.css</strong> file has all the custom styles for this template and you can find following structure in it and make your changes in proper lines.</p>
+                          <pre class="prettyprint">
+    ==================================================
+                    TABLE OF CONTENTS
+    ==================================================
+        Header Style
+        Main Menu Handler
+        Main Navigation
+        Page Header
+        Helpers and Elements
+        Info box
+        Service
+        Testimonial
+        Price Box
+        Timeline
+        Timeline
+        Pie progress
+        Info Circle
+        Icon Boxes
+        Accordion
+        Content
+        Blog
+        Comments
+        Page
+        Portfolio
+        Widgets
+        Footer
+        Responsive
+    ==================================================
+     ...
+                          </pre>
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="js">JavaScript structure</h1>
+                          </div>
+<p>Every single html template fiiles include following JavaScript libraries at their footer section. And they controls everything on this template.</p>
+                          <pre class="prettyprint">
+  
+    &lt;!-- Scripts
+    ================================================== --&gt;
+    &lt;script type="text/javascript" src="vendors/jquery.waypoints.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="vendors/isotope.pkgd.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="js/scripts.js"&gt;&lt;/script&gt;
+                          </pre>
+                          <p>Final <strong>scripts.js</strong> file has all the custom scripts and initialing for this template and you can find following structure in it and make your changes in proper lines.</p>
+                          
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="font">Font</h1>
+                          </div>
+                          <p>When you open one of HTML files, you'll find this font inclution at top of the file. This is a main font including example with Google link.</p>
+                          <pre class="prettyprint">
+    &lt;!-- Fonts --&gt;
+    &lt;link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Oswald:400,300,700' rel='stylesheet' type='text/css'&gt;
+                          </pre>
+                          <p>Then you should set it on style.css file in a line like following</p>
+                          <pre class="prettyprint">
+    css-selector {
+      font-family: Oswald;
+    }
+    css-selector-2 {
+      font-family: Lato;
+    }
+                          </pre>
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="logo">Logo & Branding</h1>
+                          </div>
+                          <p>Easiest way to set your site logo is just replace <strong>images/logo.php</strong> file with yours.</p>
+                          <p>But if you need to set different image on there, please just replace file name on header styling section of style.css file.</p>
+                          <img src="images/logostyle.jpg" alt="Logo style"/>
+                      </div>
+
+                    <!-- Section
+                      ================================================== -->
+
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="less">Less</h1>
+                          </div>
+                          <p>This theme uses Less styling for development part. But if you want to use this dynamic styling for your site, you should edit following files.</p>
+                          <pre class="prettyprint">
+    /ls
+      - blog.less
+      - comments.less
+      - content.less
+      - elements.less
+      - footer.less
+      - header.less
+      - helpers.less
+      - page.less
+      - portfolio.less
+      - responsive.less
+      - style.less
+      - variables.less
+      - widgets.less</pre>
+                        <p>And finally we need to call less compiler on your heading section.</p>
+                        <pre class="prettyprint">
+    &lt;!-- Less Compiler --&gt;
+    &lt;link rel="stylesheet/less" type="text/css" href="less/style.less" /&gt;
+    &lt;script&gt;
+    less = {
+      env: "development",
+      async: false,
+      fileAsync: false,
+      poll: 1000,
+      functions: {},
+      dumpLineNumbers: "comments",
+      relativeUrls: false,
+      rootpath: "./"
+    };
+    &lt;/script&gt;
+    &lt;script src="js/less.min.js"&gt;&lt;/script&gt;
+                        </pre>
+                      </div>
+
+
+					<!-- Section
+                      ================================================== -->
+<!-- 
+                      <div class="bs-docs-section">
+                          <div class="page-header">
+                              <h1 id="">Section</h1>
+                          </div>
+                          <p>FAQ</p>
+                      </div>
+ -->                      
+
+
+                        <!-- Sources and Credits
+                        ================================================== -->
+
+                    <div class="bs-docs-section">
+                        <div class="page-header">
+                            <h1 id="sources-and-credits">Sources and Credits</h1>
+                        </div>
+                        <p class="lead">Thank you to all who developed following projects/products. We really appreciate your support and time. We definitely couldn't do this template without you. We wish you all the best.</p>
+                        <p class="lead"><strong>Special thanks to:</strong></p>
+                        <h4>Images</h4>
+                        <ul>
+                            <li><a href="http://publicdomainarchive.com/" target="_blank">PublicDomainArchive.com</a> - Background images, portfolio image & gallery images</li>
+                            <li><a href="https://www.behance.net/gallery/5264915/KLM-Be-My-Guest" target="_blank">KLM - Be My Guest</a> collection by Julian Burford</li>
+                            <li><a href="http://iconfinder.com/" target="_blank">IconFinder.com</a> - Free social logo PNGs</li>
+                        </ul>
+                        <h4>Open Source Projects</h4>
+                        <ul>
+                            <li>Twitter <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                            <li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+                            <li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+                            <li><a href="http://owlgraphic.com/owlcarousel/" target="_blank">Owl Carousel Slider</a></li>
+                            <li><a href="http://lesscss.org" target="_blank">Less</a> By Alexis Sellier</li>
+                        </ul>
+                        
+                    </div><!-- end col-9 -->
+                    <div style="padding-bottom:120px"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- JS and analytics only. -->
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/holder.js"></script>
+
+        <script src="assets/js/application.js"></script>
+
+
+    </body>
+</html>
