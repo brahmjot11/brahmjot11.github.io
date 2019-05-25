@@ -1,3 +1,81 @@
+
+resp1-iframe {
+        width:100%;
+        height:1388px;
+        border:none;
+        overflow:hidden;
+        margin-top: -4%;
+        padding-bottom: 50px;
+    }
+    .trust{
+
+      font-size: 2em;
+    }
+    .box-cta p{
+
+      font-size: 14px;
+
+
+    }
+    @media screen and (max-width:1166px) {
+        .resp1-iframe {
+            width:100%;
+            height:1388px;
+
+        }
+
+    }
+    @media screen and (max-width:1024px) {
+        .resp1-iframe {
+            width:100%;
+            height:1388px;
+            margin-top: 0%;
+        }
+    }
+    @media screen and (max-width:980px) {
+        .resp1-iframe {
+            width:100%;
+            height:1588px;
+
+        }
+    }
+    @media screen and (max-width:767px) {
+        .resp1-iframe {
+            width:100%;
+            height:1588px;
+            margin-top: -20%;
+        }
+    }
+    @media screen and (max-width:599px) {
+        .resp1-iframe {
+            width:100%;
+            height:1588px;
+            margin-top: -20%;
+        }
+    }
+    @media screen and (max-width:479px) {
+        .resp1-iframe {
+            width:100%;
+            height:1450px;
+            margin-top: -30%;
+        }
+    }
+    @media screen and (max-width:375px) {
+        .resp1-iframe {
+            width:100%;
+            height:1450px;
+        }
+        .trust{
+
+          font-size: 1.5em;
+        }
+        .box-cta p{
+
+          font-size: 8px;
+
+
+        }
+    }    
 /*=================================================================================
 
     Theme Name: Smiley
