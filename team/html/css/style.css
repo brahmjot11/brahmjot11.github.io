@@ -1288,6 +1288,15 @@ a.nav-search {
   z-index: 121;
   background-color: #191b1f;
 }
+
+ @media screen and (max-width:375px) {
+        
+        .search-wrap{
+
+          width: 30%;
+        }
+       
+    }  
 .search-wrap .search-inner {
   display: table;
   width: 100%;
