@@ -88,13 +88,13 @@ p {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
- .wow{
+ /*.wow{
 
   height: 50px;
   width: 50px;
 
 
- }
+ }*/
 @media screen and (max-width:375px) {
         .tag1 {
             font-size: 32px;

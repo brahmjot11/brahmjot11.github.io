@@ -1288,15 +1288,6 @@ a.nav-search {
   z-index: 121;
   background-color: #191b1f;
 }
-
- @media screen and (max-width:375px) {
-        
-        .search-wrap{
-
-          max-width: 300px;
-        }
-       
-    }  
 .search-wrap .search-inner {
   display: table;
   width: 100%;
@@ -2476,15 +2467,7 @@ p.intro-text {
   border-radius: 10px;
 }
 
-     @media screen and (max-width:360px) {
-        .team-img {
 
-          border-radius: 5px;
-            
-        }
-        
-       
-    }
 .team-img.rounded {
   -webkit-border-radius: 50%;
   border-radius: 50%;
