@@ -1,3 +1,13 @@
+  function my1Function() { 
+                window.open('../../profile-brahm/html/index.html', "_top" ); 
+            }
+    function my2Function() { 
+                window.open('../../profile-kanika/html/index.html', "_top" ); 
+            }
+    function my3Function() { 
+                window.open('../../profile-ibadat/html/index.html', "_top" ); 
+            }                    
+
 (function($){
 
   "use strict";
