@@ -267,6 +267,14 @@
 
             margin-top: 0px;
         }
+
+    .team11{
+        height: 800px; 
+        background-attachment: fixed; 
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }    
     @media screen and (max-width:1166px) {
         .resp1-iframe {
             width:100%;
@@ -321,6 +329,9 @@
         .resp1-iframe {
             width:100%;
             height:1450px;
+        }
+        .team11{
+            height:900px;
         }
        
     }  

@@ -2466,6 +2466,16 @@ p.intro-text {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
+
+     @media screen and (max-width:360px) {
+        .team-img {
+
+          border-radius: 5px;
+            
+        }
+        
+       
+    }
 .team-img.rounded {
   -webkit-border-radius: 50%;
   border-radius: 50%;
