@@ -1293,7 +1293,7 @@ a.nav-search {
         
         .search-wrap{
 
-          width: 30%;
+          max-width: 300px;
         }
        
     }  
