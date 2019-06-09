@@ -549,7 +549,7 @@ section.hero {
     /*background: #3fb0ac;  */
     /*background: linear-gradient(#3fb0ac, transparent), url("../img/back.png") top center/cover no-repeat ;*/
     /*background: #3fb0ac, url("../img/Texture-01.png") top center/cover no-repeat ;*/
-    background: url("../img/back1.png") top center/cover no-repeat ;
+    background: url("../img/background.jpg") top center/cover no-repeat ;
   
 
     margin: 0 0 240px;

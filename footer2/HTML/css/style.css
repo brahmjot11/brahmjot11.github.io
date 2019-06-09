@@ -11375,7 +11375,7 @@ input[type="submit"].form-control:focus {
 /*  [ 01 ] - Footer Mini
 =========================== */
 #footer-mini {
-  background: url("../images/files/back1.png") top center/cover no-repeat;
+  background: url("../images/files/back.jpg") top center/cover no-repeat;
   /*background: linear-gradient(transparent, #3fb0ac), url("../../../img/Texture-07.png") top center/cover no-repeat;*/
   /*background: linear-gradient(#3fb0ac, transparent), url("../img/Texture-01.png") top center/cover no-repeat ;*/
   padding: 330px 0 60px;
