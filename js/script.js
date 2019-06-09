@@ -6,6 +6,7 @@ function iframeRef( frameRef ) {
 return frameRef.contentWindow ? frameRef.contentWindow.document : frameRef.contentDocument
 }
 
+
 var inside = iframeRef( document.getElementById('iframeID') );
 
 var links = inside.getElementsByTagName('a');
