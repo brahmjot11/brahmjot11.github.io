@@ -485,8 +485,8 @@ p {
           height: 90%;
 
         }
-    }
-    @media screen and (max-width:374px) {
+    }*/
+    @media screen and (max-width:375px) {
           .slider{
 
             margin: auto;
@@ -509,7 +509,31 @@ p {
           height: 90%;
 
         }
-    }   */
+    }  
+     @media screen and (max-width:360px) {
+          .slider{
+
+            margin: auto;
+
+           width: 400px;
+            height: 400px;
+            display: flex;
+
+            overflow-x: auto;
+              -webkit-scroll-snap-points-x: repeat(300px);
+                -ms-scroll-snap-points-x: repeat(300px);
+                    scroll-snap-points-x: repeat(300px);
+            -webkit-scroll-snap-type: mandatory;
+                -ms-scroll-snap-type: mandatory;
+                    scroll-snap-type: mandatory;
+        }
+        .slide {
+          width: 400px;
+          flex-shrink: 5;
+          height: 90%;
+
+        }
+    }  
 
 
 
