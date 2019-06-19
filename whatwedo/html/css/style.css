@@ -23,6 +23,7 @@
     }
 
 
+
 p span{
 display: inline-block;
 } 
@@ -1983,12 +1984,25 @@ header.transparent #nav-icon span {
 .main-wrapper {
   position: relative;
   left: 0;
+
   -webkit-transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
   -moz-transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
   -ms-transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
   -o-transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: all 600ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
+
+@media screen and (max-width:375px) {
+        .main-wrapper{
+
+          margin: 0 auto;
+          width: 375px;
+
+          max-width: 375px;
+
+        }
+
+    }
 .main-wrapper.sidenav-opened {
   left: -350px;
 }
