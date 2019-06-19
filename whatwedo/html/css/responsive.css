@@ -424,4 +424,33 @@
   }
 }
 
+@media (max-width: 375px) {
+
+  .main-wrapper{
+    
+    margin: 0 auto; 
+     width: 300px;
+  }
+
+  .content-wrapper{
+    width: 300px;
+  }
+  .section-wrap .item .row .promo-img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .promo-section{
+    width: 300px;
+  }
+
+  .promo-img  {
+    width: 300px;
+    height: 300px;
+    
+   
+  }
+
+}
+
 /*# sourceMappingURL=responsive.css.map */
