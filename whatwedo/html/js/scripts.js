@@ -1,5 +1,4 @@
-
- //<![CDATA[
+//<![CDATA[
     // !function(a){"use strict";a(window).on("load",function(){a(".loader-inner").fadeOut(),a(".loader").delay(200).fadeOut("slow")});var b=a(".header"),c=b.offset();a(window).on("scroll",function(){a(this).scrollTop()>c.top+500&&b.hasClass("default")?b.fadeOut("fast",function(){a(this).removeClass("default").addClass("switched-header").fadeIn(200)}):a(this).scrollTop()<=c.top+500&&b.hasClass("switched-header")&&b.fadeOut("fast",function(){a(this).removeClass("switched-header").addClass("default").fadeIn(100)})}),a("a.scroll").smoothScroll({speed:800,offset:-66}),a(".venobox").venobox({titleattr:"data-title",numeratio:!0}),a("#carousel").owlCarousel({navigation:!1,slideSpeed:300,paginationSpeed:400,responsiveRefreshRate:200,responsiveBaseWidth:window,pagination:!0,autoPlay:!0,singleItem:!0});var d=a(".mobile-but"),e=a(".main-nav ul");e.height();a(d).on("click",function(){return a(".toggle-mobile-but").toggleClass("active"),e.slideToggle(),a(".main-nav li a").addClass("mobile"),!1}),a(window).on("resize",function(){var b=a(window).width();b>320&&e.is(":hidden")&&(e.removeAttr("style"),a(".main-nav li a").removeClass("mobile"))}),a(".main-nav li a").on("click",function(){a(this).hasClass("mobile")&&(e.slideToggle(),a(".toggle-mobile-but").toggleClass("active"))})}(jQuery);
   function my1Function() { 
                 window.open('../../ad/HTML/SITE/index.html', "_top" ); 
@@ -10,56 +9,6 @@
     function my3Function() { 
                 window.open('../../design/HTML/SITE/index.html', "_top" ); 
             }
-
-
-$('#carouselExample').on('slide.bs.carousel', function (e) {
-
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 4;
-    var totalItems = $('.carousel-item').length;
-    
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
-
-
-//   $(document).ready(function() {
-//   $("#myCarousel").on("slide.bs.carousel", function(e) {
-//     var $e = $(e.relatedTarget);
-//     var idx = $e.index();
-//     var itemsPerSlide = 3;
-//     var totalItems = $(".carousel-item").length;
-
-//     if (idx >= totalItems - (itemsPerSlide - 1)) {
-//       var it = itemsPerSlide - (totalItems - idx);
-//       for (var i = 0; i < it; i++) {
-       
-//         if (e.direction == "left") {
-//           $(".carousel-item")
-//             .eq(i)
-//             .appendTo(".carousel-inner");
-//         } else {
-//           $(".carousel-item")
-//             .eq(0)
-//             .appendTo($(this).find(".carousel-inner"));
-//         }
-//       }
-//     }
-//   });
-// });
-
-      
 (function($){
 
   "use strict";
@@ -77,86 +26,6 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
     wow.init();
 
   });
-
-  //slider
-
-      $("#owl-team-slider").owlCarousel({
-
-        pagination: true,
-        navigation: false,
-        navigationText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
-        itemsCustom: [
-          [0, 1],
-          [370, 2],
-          [550, 3],
-          [700, 4],
-          [1000, 4]
-        ],
-
-      })
-
-      function masonry() {
-    var $container = $('.masonry');
-    $container.imagesLoaded( function() {
-      $container.isotope({
-        itemSelector: '.masonry-item',
-        layoutMode: 'masonry'
-      });
-    });
-  }
-
-  // Tabs Slider
-  $('#tabs-slider').flexslider({
-    animation: "slide",
-    manualControls: ".flex-control-nav li",
-    useCSS: false, /* Chrome fix*/
-    animationSpeed: 200,
-    touch: true,
-    directionNav: false,
-    slideshow: false
-  });
-
-   
-  // Flexslider / Masonry
-  $('#flexslider').flexslider({
-    animation: "slide",
-    directionNav: true,
-    touch: true,
-    slideshow: false,
-    prevText: ["<i class='ti-angle-left'></i>"],
-    nextText: ["<i class='ti-angle-right'></i>"],
-    start: function(){
-      var $container = $('.masonry');
-      $container.imagesLoaded( function() {
-        $container.isotope({
-          itemSelector: '.masonry-item',
-          layoutMode: 'masonry'
-        });
-      });
-    }
-  });
-
-
-  /* Flickity Slider
-  -------------------------------------------------------*/
-
-  var $gallery = $('#showcases-slider').flickity({
-    cellAlign: 'center',
-    contain: true,
-    wrapAround: true,
-    autoPlay: false,
-    prevNextButtons: false,
-    percentPosition: true,
-    imagesLoaded: true,
-    lazyLoad: 1,
-    pageDots: true,
-    selectedAttraction : 0.1,
-    friction: 0.6,
-    rightToLeft: false,
-    arrowShape: 'M 10,50 L 55,95 L 60,90 L 20,50  L 60,10 L 55,5 Z'
-  });
-
-
 
 
   $(window).resize(function(){
