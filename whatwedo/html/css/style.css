@@ -6026,35 +6026,40 @@ abbr.required {
 
         }
     }
-
-    
-    
-    @media screen and (max-width:599px) {
+     @media screen and (max-width:650px) {
         .service-item-box.style-1 {
            
-            width: 150%;
+           width: 150%;
             padding: 40px 30px;
             margin-top: -20px;
 
-
-
         }
     }
-    @media screen and (max-width:479px) {
+   
+    @media screen and (max-width:599px) {
         .service-item-box.style-1 {
            
            width: 120%;
             padding: 40px 30px;
             margin-top: -20px;
 
-
+        }
+    }
+    @media screen and (max-width:479px) {
+        .service-item-box.style-1 {
+           
+          width: 100%;
+            padding: 40px 30px;
+            margin-top: -20px;
 
         }
     }
     @media screen and (max-width:375px) {
         .service-item-box.style-1 {
            
-
+             width: 100%;
+            padding: 40px 30px;
+            margin-top: -20px;
 
         }
         .service-item-box.style-1:hover {
