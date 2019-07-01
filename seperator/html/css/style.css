@@ -36,9 +36,9 @@
           font-size: 10px;
         }
     }
-    @media screen and (max-width:374px) {
+    @media screen and (max-width:375px) {
         .call-to-action.style-2 h2 {
-          font-size: 10px;
+          font-size: 15px;
         }
     }        
 /*-------------------------------------------------------*/

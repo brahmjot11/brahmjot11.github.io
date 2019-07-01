@@ -6004,24 +6004,24 @@ abbr.required {
     @media screen and (max-width:1024px) {
         .service-item-box.style-1 {
             
-            width: 70%;
+            /*width: 70%;
             padding: 40px 30px;
-            margin-top: -20px;
+            margin-top: -20px;*/
 
         }
     }
-    @media screen and (max-width:980px) {
+    @media screen and (max-width:995px) {
         .service-item-box.style-1 {
-            
+            align-items: center;
 
                     }
     }
     @media screen and (max-width:767px) {
         .service-item-box.style-1 {
            
-             width: 180%;
+             /*width: 180%;
             padding: 40px 30px;
-            margin-top: -20px;
+            margin-top: -20px;*/
 
 
         }
@@ -6029,9 +6029,9 @@ abbr.required {
      @media screen and (max-width:650px) {
         .service-item-box.style-1 {
            
-           width: 150%;
+           /*width: 150%;
             padding: 40px 30px;
-            margin-top: -20px;
+            margin-top: -20px;*/
 
         }
     }
@@ -6039,27 +6039,27 @@ abbr.required {
     @media screen and (max-width:599px) {
         .service-item-box.style-1 {
            
-           width: 120%;
+           /*width: 120%;
             padding: 40px 30px;
-            margin-top: -20px;
+            margin-top: -20px;*/
 
         }
     }
     @media screen and (max-width:479px) {
         .service-item-box.style-1 {
            
-          width: 100%;
+          /*width: 100%;
             padding: 40px 30px;
-            margin-top: -20px;
+            margin-top: -20px;*/
 
         }
     }
     @media screen and (max-width:375px) {
         .service-item-box.style-1 {
            
-             width: 100%;
+            /* width: 100%;
             padding: 40px 30px;
-            margin-top: -20px;
+            margin-top: -20px;*/
 
         }
         .service-item-box.style-1:hover {
