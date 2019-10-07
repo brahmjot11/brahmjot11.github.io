@@ -9,6 +9,11 @@
                 window.open("https://www.linkedin.com/company/vehle/", "_blank" ); 
             }
 
+            function my4Function() { 
+                window.open("https://wa.me/918618755642", "_blank" ); 
+            }
+
+
  
 
 ( function( $ ) {
