@@ -1,3 +1,7 @@
+function my1Function() { 
+                window.open('mailto:pingus@vehle.in?Subject=Be%20a%20part%20of%20Vehle%20and%20lets%20hit%20asses%20together', "_blank" ); 
+            }
+
 (function($){
 
   "use strict";
