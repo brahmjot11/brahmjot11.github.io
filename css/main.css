@@ -244,7 +244,7 @@
         .resp-iframe {
             width:100%;
             height:1250px;
-            margin-top: -50px;
+            margin-top: -30px;
         }
         .hero-content{
             top: 35%;
@@ -329,6 +329,11 @@
             height:2300px;
             margin-top: -20%;
         }
+        .team11{
+
+            
+            height: 850px;
+        }
     }
     @media screen and (max-width:479px) {
         .resp1-iframe {
@@ -350,6 +355,7 @@
             margin-top: 0 auto;
             width: 375px;
             max-width: 375px;
+            height: 850px;
         }
         .whywhy{
 
@@ -373,7 +379,7 @@
 
         }
         .team11{
-            height:700px;
+            height:800px;
         }
        
     }  
@@ -602,8 +608,8 @@ section.hero {
     /*background: #3fb0ac;  */
     /*background: linear-gradient(#3fb0ac, transparent), url("../img/back.png") top center/cover no-repeat ;*/
     /*background: #3fb0ac, url("../img/Texture-01.png") top center/cover no-repeat ;*/
-    background: url("../img/background.jpg") top center/cover no-repeat ;
-  
+    /*background: url("../img/back1.gif") top center/cover no-repeat;*/
+    
 
     margin: 0 0 240px;
     padding: 0;
@@ -629,7 +635,7 @@ section.hero .inner-hero {
     z-index: 1000;
 }
 .header.switched-header {
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px dotted #f2f2f2;
     left: 0;
     position: fixed;
@@ -647,7 +653,7 @@ section.hero .inner-hero {
 }
 .header .logo h2,
 .footer .logo h2 {
-    color: #ffffff;
+    color: rgba(50, 50, 50, 0.9);
     font-size: 17px;
     text-transform: uppercase;
     font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -722,7 +728,7 @@ section.hero .inner-hero {
     margin-left: 25px;
 }
 .main-nav li a {
-    color: #ffffff;
+    color: rgba(50, 50, 50, 0.9);
     display: block;
     padding: 12px 0;
     position: relative;
@@ -756,12 +762,113 @@ section.hero .inner-hero {
 }
 
 
+
 .block-media {
     position: relative;
+    
+
 }
-.block-media {
-    position: relative;
+
+.selectt{
+    cursor: pointer;
 }
+
+.character{
+
+    margin-top: 0px;
+}
+
+.blockk{
+    margin-top: -70%;
+}
+
+@media screen and (max-width:1250px) {
+        .blockk{
+                margin-top: -60%;
+            }
+
+    }
+    @media screen and (max-width:1024px) {
+        .blockk{
+                margin-top: -70%;
+            }
+    }
+    @media screen and (max-width:930px) {
+        .blockk{
+                margin-top: -80%;
+            }
+
+            .inner-hero{
+
+                margin-top: 10%;
+            }
+
+
+    }
+    @media screen and (max-width:767px) {
+        .blockk{
+                margin-top: -120%;
+            }
+
+        .whywhy{
+
+            margin-top: -20%;
+        }
+    }
+    @media screen and (max-width:599px) {
+        .blockk{
+                margin-top: -110%;
+            }
+
+            .whywhy{
+
+            margin-top: -30%;
+        }
+        .inner-hero{
+
+                margin-top: 10%;
+            }
+    }
+    @media screen and (max-width:479px) {
+        .blockk{
+                margin-top: -115%;
+            }
+                 .whywhy{
+
+            margin-top: -70%;
+        }
+        .inner-hero{
+
+                margin-top: 20%;
+            }
+    }
+     @media screen and (max-width:415px) {
+        .blockk{
+                margin-top: -125%;
+            }
+                 .whywhy{
+
+            margin-top: -60%;
+        }
+        .inner-hero{
+
+                margin-top: 20%;
+            }
+    }
+    @media screen and (max-width:375px) {
+        .blockk{
+                margin-top: -120%;
+            }
+                    .whywhy{
+
+            margin-top: -80%;
+        }
+        .inner-hero{
+
+                margin-top: 20%;
+            }
+    }   
+
 .block-media .play-btn {
     position: absolute;
     top: 50%;

@@ -6,6 +6,10 @@
             }
     function my3Function() { 
                 window.open('../../profile-ibadat/html/index.html', "_top" ); 
+            } 
+
+             function my4Function() { 
+                window.open('../../profile-kalyan/html/index.html', "_top" ); 
             }                    
 
 (function($){

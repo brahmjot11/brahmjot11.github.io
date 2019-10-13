@@ -1,3 +1,7 @@
+  function my1Function() { 
+                window.open('mailto:ibadatcreates@gmail.com?Subject=Hello%20people', "_blank" ); 
+            }
+
 (function($){
 	"use strict";
 
