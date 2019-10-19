@@ -791,7 +791,11 @@ section.hero .inner-hero {
 
 .character{
     
+
     width: 30%;
+
+    /*width: 100%;*/
+
 
     margin-top: 5%;
     display: block;
@@ -814,10 +818,17 @@ section.hero .inner-hero {
     }
 @media screen and (max-width:1922px) {
         .blockk{
-                margin-top: -50%;
+                margin-top: -60%;
             }
          .resp1-iframe{
                 height: 1553px;
+        }
+        .character{
+            width: 40%;
+        }
+        .whywhy{
+
+            margin-top: 0%;
         }
 
     }
@@ -944,6 +955,7 @@ section.hero .inner-hero {
             }
         .character{
             /*height: 500px;*/
+
             width: 85%;
            
 
@@ -951,6 +963,11 @@ section.hero .inner-hero {
         .resp-iframe{
             height: 1250px;
         }
+
+           
+
+        
+
     }   
 
 .block-media .play-btn {
