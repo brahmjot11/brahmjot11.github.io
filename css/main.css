@@ -774,6 +774,8 @@ section.hero .inner-hero {
 }
 
 .character{
+    
+    width: 100%;
 
     margin-top: 0px;
 }
@@ -857,7 +859,7 @@ section.hero .inner-hero {
     }
     @media screen and (max-width:375px) {
         .blockk{
-                margin-top: -120%;
+                margin-top: -110%;
             }
                     .whywhy{
 
@@ -865,8 +867,15 @@ section.hero .inner-hero {
         }
         .inner-hero{
 
+
+
                 margin-top: 20%;
             }
+        .character{
+            /*height: 500px;*/
+           
+
+        }
     }   
 
 .block-media .play-btn {
