@@ -1,307 +1,67 @@
+<!--
+    ___         __              __       ____                  __
+   /   | ____ _/ /______ ______/ /_     / __ \____ _____  ____/ /__  __  __
+  / /| |/ __ `/ //_/ __ `/ ___/ __ \   / /_/ / __ `/ __ \/ __  / _ \/ / / /
+ / ___ / /_/ / ,< / /_/ (__  ) / / /  / ____/ /_/ / / / / /_/ /  __/ /_/ /
+/_/  |_\__,_/_/|_|\__,_/____/_/ /_/  /_/    \__,_/_/ /_/\__,_/\___/\__, /
+                                                                  /____/
 
+-->
 
 <!DOCTYPE html>
 <html lang="en">
-   <head>
 
-   	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149865249-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhiyo</title>
 
-  gtag('config', 'UA-149865249-1');
-</script>
+    <link rel="stylesheet" href="lib/skyroutes.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 
-      <!-- Metas -->
-      <meta charset="utf-8">
-      <title>Vehle - Damn Right place</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- google font -->
-      <link href="https://fonts.googleapis.com/css?family=Quicksand|Reenie+Beanie" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Orbitron:500,700" rel="stylesheet">
-      <!-- Css -->
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet"  media="all"/>
-      <link href="css/owl-carousel/owl.theme.css" rel="stylesheet"  media="all" />
-      <link href="css/venobox.css" rel="stylesheet" type="text/css"  media="all" />
-      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
-      <link href="css/sass.sass" rel="stylesheet" type="text/sass"  media="all" />
-      <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-      <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:700|Open+Sans:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="style">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">              
 
-      
+    <script>
+        let AppError = false;
+        window.onerror = (e, src, line, col) => {
+            document.querySelector('#sr_intr img').src = "assets/srt.png";
+            document.querySelector('#sr_intr div').innerText = "SkyRoutes";
+            document.querySelector('#sr_intr').style.display = 'block';
+            document.querySelector('#sr_intr p').style.marginTop = "30px";
+            if (!AppError) {
+                document.querySelector('#sr_intr p').innerText = `Error in ${src}, at line: ${line}, col: ${col}, ${e}`;
+                setTimeout(() => {
+                    southBridge({ req: "atomic" });
+                }, 1000);
+                AppError = true;
+            }
+        }
+    </script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148516528-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-148516528-1');
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
 
-      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
-      <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|ZCOOL+KuaiLe" rel="stylesheet">
+<body><div id="sr_intr"><img src="assets/sr.jpeg"><div></div><p></p></div><div id="sr_main"></div></body>
+<script src="lib/skyroutes.js"></script>
+<script src="main.js"></script>
 
-      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-
-      <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1514009865408397');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1514009865408397&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-   </head>
-   <body>
-      <!-- Preloader -->
-      <div class="loader">
-         <!-- Preloader inner -->
-         <div class="loader-inner">
-            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
-               <circle class="spinner" cx="50" cy="50" r="21" fill="#ffffff" stroke-width="3"/>
-            </svg>
-         </div>
-         <!-- End preloader inner -->
-      </div>
-      <!-- End preloader-->
-      <!--Wrapper-->
-      <div class="wrapper">
-         <!--Hero section-->
-         <section class="hero">
-            <!--Header-->
-            <header class="header default">
-               <div class=" left-part">
-                  <a class="logo scroll" href="#hero">
-                  	 <h2>vehle<span>.in</span></h2>
-                     
-                  </a>
-               </div>
-               <div class="right-part">
-                  <nav class="main-nav">
-                     <div class="toggle-mobile-but">
-                        <a href="#" class="mobile-but" >
-                           <div class="lines"></div>
-                        </a>
-                     </div>
-                     <ul>
-                       
-                        <li><a class="scroll" href="#why">why ?</a></li>
-                        <li><a class="scroll" href="recentblog2/eleos/parallax/blog.html">blog</a></li>
-                        <!-- <li><a class="scroll" href="contact/html/index.html" >contact</a></li> -->
-                        
-						<!-- <button class="button11" onclick="document.getElementById('modal-wrapper1').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">
-						Open Popup</button> -->
-
-						
-
-
-
-
-                     </ul>
-                  </nav>
-               </div>
-            </header>
-
-            
-
-
-            <!--End header-->
-            <!--Inner hero-->
-            <div class="inner-hero">
-
-              <div >
-                <img  class="character" src="img/back1.gif" alt="">
-              </div>
-              <!-- <div class="character">
-                <img  src="img/back1.gif" alt="">
-
-              </div> -->
-               <!-- <img class="character" src="img/back1.gif" alt=""> -->
-               <!--Container-->
-               <div class="container hero-content">
-                  <!--Row-->
-                  <!-- <div class="row vehlemian">
-                     <div class="col-sm-10 col-sm-offset-1 text-center">
-                     	<div class="text-size">
-
-	                     	<img class="vehlelogo" src="img/vehle.png">
-
-	                    </div>
-
-	                        <div class="block-teaser">
-                        	
-                           
-                           <h3 class="tagline lead"> ...<i class="em-svg em-i_love_you_hand_sign" style="height: 30px;width: 30px;"></i> </h3>
-                           
-                        </div>
-                     </div>
-                  </div> -->
-                  <!--End row-->
-                  <!--Row-->
-                  <div class="row blockk">
-                     <div class="col-md-8 col-md-offset-2 ">
-                        <div class="block-media  mt-60 page">
-                           <div class="block-shot">
-                              <img src="img/thumbnail_0.png" alt="">
-                           </div>
-                           <a data-type="youtube" href="https://youtu.be/KgCR-hwm83w" class="play-btn venobox"></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!--End row-->
-               </div>
-               <!--End container-->
-            </div>
-            <!--End inner hero-->
-         </section>
-         <!--End hero section-->
-
-
-
-          <!-- <div class="myspecialdiv " id="why"> -->
-            <iframe class="whywhy" id="why" src="aboutus/html/index.html" style="height: 680px; background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;" height="100%" width="100%" frameborder="0" wmode="transparent" scrolling="no"></iframe>
-          <!-- </div> -->
-
-      
-            <iframe class="resp1-iframe" id="full-screen-me" src="whatwedo/html/index.html" allowfullscreen:""  height="100%" width="100%" frameborder="0" wmode="transparent" scrolling="no"></iframe>
-        
-
-          </div> 
- 
-         <!--Gallery section-->
-         <section id="gallery" class="gallery pt-120 pb-120 text-center" >
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                     <h1 class="title" style="font-family: 'Reenie Beanie', cursive;opacity: .6;"># this is some serious shit bruh coz here we stand
-                     </h1>
-                  </div>
-                  <div class="col-md-8 col-md-offset-2 mt-60 ">
-                     <ul id="carousel">
-                        <li><img class="selectt" target="_blank" onclick = "my1Function()" src="img/trailer.jpg" alt=""></li>
-                        <li><img class="selectt" target="_blank" onclick = "my2Function()" src="img/teaser.jpg" alt=""></li>
-                     <!--    <li><img  onclick="location.href='pageurl.html';" src="img/shotscreen/3.png" alt=""></li>
-                        <li><img  onclick="location.href='pageurl.html';" src="img/shotscreen/5.png" alt=""></li>
-                        <li><img  onclick="location.href='pageurl.html';" src="img/shotscreen/3.png" alt=""></li>
-                        <li><img  onclick="location.href='pageurl.html';" src="img/shotscreen/5.png" alt=""></li> -->
-                     </ul>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-         </section>
-         <!--End gallery section-->
-
-
-         <!--Testimonials section-->
-         <section class="testimonials pt-120 pb-120">
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row vertical-align">
-                  <div class="col-md-4">
-                     <h3 class="title" style="font-family: 'Quicksand', sans-serif;opacity: .8;">This stuff right here<br> is what we earn !
-                     </h3>
-                     <p style="font-family: 'Quicksand', sans-serif;">We are able to maintain a very good connection with our customers, every project we did has its own story. It's fun we enjoy it which is all needed.<br>Let's do the shit together bruh! , it will definitely work.</p>
-                     <!-- <a class="but mt-20 scroll" href="#pricing">Princing info</a> -->
-                  </div>
-                  <div class="col-md-7 col-md-offset-1 col-sm-offset-1">
-                     <div class="block-content testi">
-                        <div class="block-testi mb-30">
-                           <div class="testi-img left">
-                              <img src="img/testimonials/11.jpeg" alt="">
-                           </div>
-                           <div class="testi-details right">
-                              <h5><a href="https://www.linkedin.com/in/mayuresh-kanade-28a8a414/">Mayuresh Kanade</a>  - Director Client Partner at Lemnisk</h5>
-                              <blockquote>“Brilliant trailer Amit! I'm a fan of smart snippets and this is one of the best :) Would like to see more of you perhaps in those 'quick tips' type of videos..“</blockquote>
-                           </div>
-                        </div>
-                        <div class="block-testi mb-30">
-                           <div class="testi-img right">
-                              <img src="img/testimonials/4.png" alt="">
-                           </div>
-                           <div class="testi-details left">
-                              <h5><a href="https://www.linkedin.com/in/shotta/">Sandeep Hotta</a> 
- - Digital Marketing Manager and Corporate Strategist</h5>
-                              <blockquote>“Looks ridiculously good!! Congrats..buying a copy today.“</blockquote>
-                           </div>
-                        </div>
-                        <div class="block-testi mb-30">
-                           <div class="testi-img left">
-                              <img src="img/testimonials/33.jpeg" alt="">
-                           </div>
-                           <div class="testi-details right">
-                              <h5><a href="https://www.linkedin.com/in/govindjeyaram/">Govind Jeyaram </a> - CEO at amita.ai</h5>
-                              <blockquote>“Congrats Amit.. The trailer is very catchy and wishing great success “</blockquote>
-                           </div>
-                        </div>
-                        <div class="block-testi">
-                           <div class="testi-img right">
-                              <img src="img/testimonials/44.jpeg" alt="">
-                           </div>
-                           <div class="testi-details left">
-                              <h5><a href="https://www.linkedin.com/in/vikram-kallianpur/">Vikram Kallianpur</a> 
- - Business Leader Partnering for Transformational Growth
-</h5>
-                              <blockquote>“Congrats Amit! Loved your world class launch video. Look forward to reading your book.“</blockquote>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-         </section>
-         <!--End testimonials section-->
-
-          <div class="myspecialdiv">
-            <iframe id="full-screen-me " src="seperator/html/index.html" style="height: 150px; background-attachment: fixed;background-position: center;background-size: cover;background-repeat: no-repeat;" height="100%" width="100%" frameborder="0" wmode="transparent" scrolling="no"></iframe>
-          </div>
-
-         <div class="myspecialdiv">
-            <iframe id="full-screen-me iframeID" class="team11" target="_blank" src="team/html/index.html" height="100%" width="100%" frameborder="0" wmode="transparent" scrolling="no"></iframe>
-          </div>
-
-         <!--  <div class="resp-container">
-		    <iframe class="resp-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
-		</div> -->
-
-          <!--  <div class="resp-container"> -->
-            <iframe class="resp-iframe" id="full-screen-me" src="recentblog2/eleos/parallax/index.html" height="100%" width="100%" frameborder="0" wmode="transparent" scrolling="no"></iframe>
-        <!--   </div> -->
-
-           <!-- <div class="myspecialdiv" id="contact"> -->
-            <iframe id="full-screen-me" class="footerr" src="footer2/HTML/index.html" height="100%" width="100%" frameborder="0" wmode="transparent" scrolling="no"></iframe>
-          <!-- </div> -->
-
-        </div>
-
-      <!-- End wrapper-->
-      <!--Javascript-->	
-      <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
-      <script src="js/owl.carousel.js" type="text/javascript"></script>
-      <script src="js/venobox.min.js" type="text/javascript"></script>
-      <script src="js/smooth-scroll.js" type="text/javascript"></script>
-      <script src="js/placeholders.min.js" type="text/javascript"></script>
-      <script src="js/script.js" type="text/javascript"></script>
-      <!-- Google analytics -->
-      <!-- End google analytics -->
-   </body>
 </html>

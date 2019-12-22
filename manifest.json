@@ -1,0 +1,38 @@
+{
+  "name": "Dhiyo",
+  "short_name": "Dhiyo",
+  "background_color": "#fff",
+  "theme_color": "#FFD45E",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/sr.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/sr.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    { 
+      "src": "/assets/srt.png"
+    }
+  ],
+
+  "skyroutes": {
+
+    "assets": [
+      "/assets/logo.png",
+      "/assets/videos/intro.mp4"
+
+    ],
+    
+    "update_interval": "-1",
+    "hot_reload": "false",
+    "route_error": "free",
+    "force_install": "false",
+    "force_network": "false"
+  }
+}
