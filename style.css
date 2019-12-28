@@ -219,7 +219,7 @@ html, body {
 
 #explainer-mask {
     vertical-align: middle;
-  
+   
 }
 
 #explainer-mask img {
@@ -227,8 +227,6 @@ html, body {
     position: relative;
     box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.219);
     margin-top: -50px;
-    margin-left: 27%;
-
 }
 
 #explainer-embed-wrap {
@@ -920,7 +918,7 @@ html, body {
 
 /*#tablets*/
 
-/*@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     
     #header {
@@ -928,7 +926,7 @@ html, body {
     }
 
     #header img {
-        width: 150px ;
+        width: 150px !important;
     }
 
     #widenav {
@@ -955,7 +953,7 @@ html, body {
 
    
     #intro {
-        padding: 40px ;
+        padding: 40px !important;
     }
     #intro .text-wide {
         display: none;
@@ -973,21 +971,21 @@ html, body {
         margin-top: 65%;
     }
     #intro .text-mob .dark {
-        font-size: 180% ;
-        line-height: 55px ;
+        font-size: 180% !important;
+        line-height: 55px !important;
         width: 65%;
         margin-left: 17%; 
     }
 
     #intro-mask {
-        display: none;
+        display: none !important;
         width: 70%;
-        top: initial ;
+        top: initial !important
     }
 
     #intro-video {
         width: 80%;    
-        top: initial ;
+        top: initial !important;
         margin-bottom: 20%;
     }
     #intro-mask, #intro-video {
@@ -996,16 +994,16 @@ html, body {
     }
 
     .store img {
-        width: 220px ;
+        width: 220px !important;
         display: block;
         margin: 0 auto;
         position: relative;
-        margin-top: -40px ;
+        margin-top: -40px !important;
     }
 
     
     #explainer h2 {
-        font-size: 300%;
+        font-size: 300% !important;
         margin-top: 3%;
     }
     #explainer h3{
@@ -1018,38 +1016,43 @@ html, body {
     }
     
     #explainer-mask img {
-        width: 90% ;
+        width: 90% !important;
         display: block;
         margin: 0 auto;
         
         position: relative;
-        left: initial ;
+        left: initial !important;
         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.349);
     }
 
     #play-explainer {
       
         
-        left: 50% ;
+        left: 50% !important;
        
     }
     
     #about h2, #features h2, #vision h2, #multilang h2, #stat h2, #reviews h2, #awards h2 {
-        font-size: 150% ;
+        font-size: 150% !important;
         margin-top: 10%;
     }
 
+    #about {
+        margin-bottom: 100%;
+    }
+
     #about p {
-        width: 80% ;
-        font-size: 180% ;
-        line-height: 55px ;
+        width: 80% !important;
+        font-size: 180% !important;
+        line-height: 55px !important;
         margin-top: -16%;
     }
 
     #minions video {
-        width: 220px;
-        margin-bottom: 100%;
+        width: 320px;
+        margin-bottom: 0%;
     }
+
     #about h3{
         font-size: 300%;
         margin-bottom: 20%;
@@ -1063,13 +1066,13 @@ html, body {
    
     } 
     #features {
-        min-height: initial ;
+        min-height: initial !important;
         margin-top: -70%;
 
     }
     #features .text {
-        float: initial ;
-        padding: 0px ;
+        float: initial !important;
+        padding: 0px !important;
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -1078,7 +1081,7 @@ html, body {
         font-size: 300%;
         line-height: 55px;
         text-align: center;
-        padding: 40px ;
+        padding: 40px !important;
         margin-bottom: 5%;
         margin-top: -10%;
      }
@@ -1092,7 +1095,7 @@ html, body {
      }
 
     #features .text p{
-        padding: 40px ;
+        padding: 40px !important;
         font-size: 180%;
         width: 80%;
         margin-left: 10%;
@@ -1102,10 +1105,10 @@ html, body {
     }
 
     #features .cards {
-        float: initial ;
+        float: initial !important;
        
         text-align: center;;
-        width: 79% ;
+        width: 79% !important;
         margin-bottom: 80%;
         margin-left: 3%;
     }
@@ -1113,58 +1116,53 @@ html, body {
     #features .card {
         
         display: block;
-        margin: 0 auto ;
-        margin-bottom: 20px ;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) !important;
     }
 
     #features .cards .card2 {
         margin-left: -1% ;
-        margin-top: -18% ;
+        margin-top: -18% !important;
     }
 
-   
-
-
-
     #vision {
-        height: initial ;
+        height: initial !important;
         margin-top: -90%;
     }
 
     #vision-swap {
-        display: flex ;
+        display: flex !important;
         flex-flow: column-reverse;
     }
     #vision img {
         width: 80%;
-        float: initial ;
+        float: initial !important;
         margin-bottom: 86%;
     }
     
     #vision .text {
         float: none;
-        width: 80% ;
-        display: block ;
-        margin: 0 auto ;
+        width: 80% !important;
+        display: block !important;
+        margin: 0 auto !important;
         margin: 20px;
-        position: initial ;
-        left: initial ;
-        top: initial ;
-        text-align: center;
-
-
-        
-
+        position: initial !important;
+        left: initial !important;
+        top: initial !important;
+        text-align: center;   
     }
+
     #vision .text h1{
         font-size: 300%;
         line-height: 55px;
 
     }
+
     #vision .text h2{
         text-align: center;
     }
+
     #vision .text p{
         font-size: 180%;
         line-height: 55px;
@@ -1173,16 +1171,14 @@ html, body {
         margin-top: 5%;
     }
     
-    
-
     #multilang{
-        margin-top: -110%;
+        margin-top: -130%;
     }
 
     #multilang .left {
-        float: none ;
-        width: 80% ;
-        margin: 0 auto ;
+        float: none !important;
+        width: 80% !important;
+        margin: 0 auto !important;
         position: relative;
         top: 40px;
         text-align: center;
@@ -1206,7 +1202,7 @@ html, body {
 
     #multilang .right {
         position: absolute;
-        left: initial ;   
+        left: initial !important;   
     }
     
     #shuff img {
@@ -1219,11 +1215,11 @@ html, body {
     }
     
     .front {
-        width: 300px ;
+        width: 300px !important;
         margin-top: -30px;
         z-index: 2;
         
-        margin-left: -80px ;
+        margin-left: -80px !important;
     }
 
     
@@ -1257,11 +1253,11 @@ html, body {
     }
 
     #statgrid {
-        grid-template-columns: auto ;
+        grid-template-columns: auto !important;
     }
 
     #statgrid div {
-        margin-bottom: 60px ;
+        margin-bottom: 60px !important;
         width: 80%;
         display: block;
         margin: 0 auto;
@@ -1279,6 +1275,7 @@ html, body {
     #review{
        
     }
+
     #reviewslide {
         height: 750px;
         position: relative;
@@ -1291,14 +1288,8 @@ html, body {
         margin-top: 4%;
     }
     #reviews .carousel {
-        overflow: hidden ;
-
-        
+        overflow: hidden !important;
     }
-    
-    
-
-    
 
     #awards{
         margin-top: -20px;
@@ -1312,29 +1303,27 @@ html, body {
     #awards .carousel{
         margin-top: -50px;
     }
-    
-   
 
     #contact {
-        background-image: none ;
-        height: initial ;
+        background-image: none !important;
+        height: initial !important;
         background-color: #fff;
-        display: flex ;
-        flex-flow: column-reverse  ;
+        display: flex !important;
+        flex-flow: column-reverse !important ;
         
     }
     #contact .left {
-        float: initial ;
+        float: initial !important;
        
-        margin-left: initial ;
-        width: 80% ;
-        margin: 0 auto ;
+        margin-left: initial !important;
+        width: 80% !important;
+        margin: 0 auto !important;
         height: 70%;
-        top: initial ;
+        top: initial !important;
         background: #fff;
         padding: 20px;
-        margin-top: 140px ;
-        margin-bottom: 40px ;
+        margin-top: 140px !important;
+        margin-bottom: 40px !important;
       
     }
 
@@ -1343,10 +1332,10 @@ html, body {
     }
 
     #contact .right {
-        float: initial ;
+        float: initial !important;
         width: 90%;
-        margin: 0 auto ;
-        left: initial ;
+        margin: 0 auto !important;
+        left: initial !important;
     }
 
     #contact .right h1{
@@ -1379,18 +1368,17 @@ html, body {
 
     #contact .right a {
         margin-left: 20px;
-    }
+    }  
+}
 
-   
 
-}*/
 
 
 
 /*@media only screen and (max-width: 768px){
 
     #minions video {
-        width: 240px;
+        width: 260px;
         margin-bottom: 0%;
     }
 
@@ -1405,7 +1393,7 @@ html, body {
 
 
 /* Mobile */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 700px) {
 
     /* header */
     #header {
@@ -1479,7 +1467,7 @@ html, body {
     
     /* explainer */
     #explainer h2 {
-        font-size: 180% ;
+        font-size: 180% !important;
     }
 
     #youtube {
@@ -1511,11 +1499,12 @@ html, body {
 
     /* about */
     #about h2, #features h2, #vision h2, #multilang h2, #stat h2, #reviews h2, #awards h2 {
+        font-size: 120% !important;
     }
 
     #about p {
         width: 80% !important;
-        font-size: 98% ;
+        font-size: 98% !important;
         line-height: 35px !important;
     }
 
@@ -1827,193 +1816,3 @@ html, body {
    
 
 }
-
-@media (min-width: 768px) and (max-width: 1024px){
-
-    #intro-video {
-        width: 80%;    
-        top: initial !important;
-    }
-    #intro p {
-        font-size: 140%;
-
-    }
-    #intro .text-mob h2 {
-        font-size: 240%;
-        line-height: 40px;
-
-    }
-    #intro .text-mob .dark{
-        font-size: 160% !important;
-    }
-    #intro{
-        margin-top: -20%;
-    }
-
-
-
-    #explainer h2 {
-        
-        font-size: 240%;
-    }    
-    #explainer h3{
-        font-size: 140%;
-    }
-
-    
-
-    #about h3 {   
-        font-size: 240%;
-    }    
-    #about h2{
-        padding-bottom: 12px;
-    }
-    #minions video {
-        width: 320px;
-    }
-    #about h2, #features h2, #vision h2, #multilang h2, #stat h2, #reviews h2, #awards h2 {
-        font-size: 140% ;
-    }
-    #about img{
-        width: 15%;
-    }
-    #about p{
-
-        font-size: 150%;
-    }
-    #about{
-       padding-bottom: 60%;
-    }
-
-    
-
-    #features .text h2{
-        font-size: 140%;
-        text-align: center;
-    }
-    #features .text h1{
-        font-size: 240%;
-        margin-top: 18%;
-        margin-bottom: 10%;
-    }
-    #features .text p{
-
-        font-size: 140%;
-    } 
-    #features{
-        padding-bottom: 50%;
-    }  
-    
-
-
-
-    #vision .text h1{
-        font-size: 240%;
-        line-height: 40px;
-
-    }
-    #vision .text h2{
-        text-align: center;
-        font-size: 140%;
-        
-    }
-    #vision .text p{
-        font-size: 140%;
-    }
-
-    #vision img {
-        width: 80%;
-        margin-left: 00px;
-        float: center;
-        padding-top: 100px;
-    }
-    #vision{
-        padding-bottom: 60%;
-    }
-    
-
-
-    #multilang .left h2{
-        text-align: center;
-        font-size: 140%;
-    }
-    #multilang .left h1{
-        font-size: 240%;
-        line-height: 35px;
-    }
-    #multilang .left p{
-        font-size: 140%;
-    }
-    #shuff img {
-        width: 300px;
-        position: absolute;
-        transition: all 0.4s;
-    }
-    #multilang .right{
-        margin-left: 27%;
-    }
-
-
-
-   
-    #stat{
-        padding-top: 10%;
-    }
-    #stat h1{
-        font-size: 240%;
-    }
-
-    #stat h2{
-        font-size: 140%;
-    }
-    #statgrid img{
-        width: 300px;
-    }
-
-    #statgrid div p {
-        font-family: 'Open Sans', sans-serif;
-        width: 50%;
-        font-size: 180%;
-        line-height: 30px;
-        letter-spacing: 1px;
-        margin:0 auto;
-    }
-
-    #statgrid div h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 240%;
-    }
-
-
-
-    #reviews h1{
-        font-size: 240%;
-        line-height: 35px;
-    }
-    #reviews h2{
-        font-size: 140%;
-    }
-
-
-
-    #awards h1{
-        font-size: 240%;
-    }
-
-    #contact .right h1{
-        font-size: 240%;
-        
-    }
-    #contact .right h3 {
-        font-size: 140%;
-        opacity: .6;
-        letter-spacing: 1px;
-    }
-    #contact .right h2 {
-        font-size: 180%;
-        opacity: .6;
-        letter-spacing: 1px;
-    }
-    #contact .right .socialicon{
-        margin-left: 22%;
-    }
