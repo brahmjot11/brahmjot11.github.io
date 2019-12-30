@@ -4,10 +4,10 @@
         <img src="assets/logo.png" alt="logo">
         <div id="header-right">
             <div id="widenav">
-                <a href="#about" data-aos-anchor-placement="#about" onclick="myFunction()">About</a>
-                <a href="#features">Features</a>
+                <a onclick="myFunction()">About</a>
+                <a onclick="myFunction1()">Features</a>
                 <a href="https://blog.dhiyo.ai/">Blog</a>
-                <a href="#contact">Contact</a>
+                <a onclick="myFunction2()">Contact</a>
             </div>
             <button id="mobnav" onclick="openNav();">
                 <i class="material-icons">menu</i>
@@ -15,10 +15,10 @@
         </div>
         <div id="drawer">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-            <a class="">About</a>
-            <a>Features</a>
-            <a>Blog</a>
-            <a>Contact</a>
+            <a onclick="myFunction()">About</a>
+            <a onclick="myFunction1()">Features</a>
+            <a href="https://blog.dhiyo.ai/">Blog</a>
+            <a onclick="myFunction2()">Contact</a>
         </div>
     </div>
 
@@ -70,9 +70,9 @@
         </div>
 
         <div id="explainer-embed-wrap">
-            <div id="explainer-embed">
+            <div id="explainer-embed" class="iframe-container">
                 <a href="javascript:void(0)" id="closevid" onclick="explaineroff();">&times;</a>
-                <iframe width="860" height="485" src="https://www.youtube.com/embed/FhhrE3OOcAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FhhrE3OOcAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -308,9 +308,9 @@
         <div class="left">
             <div class="leftsec">
             	<form action="inc/sendemail.php" class="contact-us-form form-validation" auto-complete="off" method="POST">
-	                <input value="" id="name" type="text" class="inputs" placeholder="Name*">
-	                <input value="" id="email" type="email" class="inputs" placeholder="Email*">
-	                <input value="" id="message" type="text" class="inputs" placeholder="Message*" style="margin-top: 130px;margin-bottom: 50px;">
+	                <input value="" id="name" type="text" class="inputs" placeholder="Name*" name="name">
+	                <input value="" id="email" type="email" class="inputs" placeholder="Email*" name="email">
+	                <input value="" id="message" type="text" class="inputs" placeholder="Message*" name="message" style="margin-top: 130px;margin-bottom: 50px;">
 	                <br>
 	                <div class="theme-button">
 	                    <span></span>
@@ -318,8 +318,9 @@
 	                </div>
 	                <br>
             	</form>
+            </div>
 
-                <!-- form validation -->
+            <!-- form validation -->
                 <div class="alert-wrapper" id="alert-success">
                     <div id="success">
                          <button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -336,8 +337,10 @@
                         </div>
                      </div>
                 </div>
-            </div>
+        <!-- end form validation -->
+
         </div>
+
         <div class="right">
             <h3>#CONTACT</h3>
             <h1>Your questions deserve answer, Drop in your queries here</h1> 

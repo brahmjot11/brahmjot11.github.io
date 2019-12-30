@@ -1,6 +1,6 @@
 <?php
 
-    $to = "imkanikagarg@gmail.com";
+    $to = "info@dhiyo.ai";
     $from = $_POST['email'];
     $name = $_POST['name'];
     $msg = $_POST['message'];

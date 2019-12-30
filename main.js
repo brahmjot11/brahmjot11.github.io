@@ -154,7 +154,7 @@ function contactFormValidation () {
 }
 
 
-// Close suddess Alret
+// Close suddess Alert
 function closeSuccessAlert () {
   var closeButton = $ (".closeAlert");
   if(closeButton.length) {
@@ -170,6 +170,16 @@ function closeSuccessAlert () {
 
 function myFunction() {
   var elmnt = document.getElementById("about");
+  elmnt.scrollIntoView();
+}
+
+function myFunction1() {
+  var elmnt = document.getElementById("features");
+  elmnt.scrollIntoView();
+}
+
+function myFunction2() {
+  var elmnt = document.getElementById("contact");
   elmnt.scrollIntoView();
 }
 
