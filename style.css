@@ -1,3 +1,5 @@
+
+
 html, body {
     /* max-width: 100%; */
     /* overflow-x: hidden; */
@@ -856,6 +858,7 @@ html, body {
   position: relative;
   z-index: 1;
   background: #f73859;
+  cursor: pointer;
 }
 
 #contact .right {
@@ -909,6 +912,62 @@ html, body {
     margin-top: 100px;
 }
 
+
+/* form validation */
+.alert-wrapper {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+#success,
+#error {
+  position: relative;
+  width:500px;
+  height: 100px;
+  top: calc(50% - 50px);
+  left:calc(50% - 250px);
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+#success .wrapper,
+#error .wrapper {
+  display: table;
+  width:100%;
+  height: 100%;
+}
+#success .wrapper p,
+#error .wrapper p{
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+#success {
+  color: #26ace3;
+}
+#error {
+  color: #C9182B;
+}
+#error button,
+#success button {
+  color:#fff;
+  width:40px;
+  height:40px;
+  line-height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 20px;
+}
+.form-validation label.error {display: none !important;}
+.form-validation textarea.error,
+.form-validation input.error {border-bottom:2px solid #f65353 !important;}
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -1510,6 +1569,9 @@ html, body {
 
 
     /* about */
+    #about{
+        margin-bottom: 35%;
+    }
     #about h2, #features h2, #vision h2, #multilang h2, #stat h2, #reviews h2, #awards h2 {
     }
 
@@ -1568,6 +1630,7 @@ html, body {
         /*margin-top: 80px;*/
         /*padding-left: 20px;*/
         font-weight: 400;
+        text-align: center;
 
      }
     #features .text p{
@@ -2017,3 +2080,10 @@ html, body {
     #contact .right .socialicon{
         margin-left: 22%;
     }
+}
+
+@media only screen and (max-width: 600px){
+            #about{
+                /*margin-bottom: 60%;*/
+            }
+}
