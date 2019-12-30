@@ -12,13 +12,13 @@ function closeNav() {
 
 
 function explaineron() {
-    document.getElementById('youtube').src = "https://www.youtube.com/embed?v=FhhrE3OOcAc";
+    // document.getElementById('youtube').src = "https://www.youtube.com/embed/FhhrE3OOcAc";
     document.getElementById("explainer-embed-wrap").style.display = "block";
 }
 
 function explaineroff() {
     document.getElementById("explainer-embed-wrap").style.display = "none";
-    document.getElementById('youtube').src = "";
+    // document.getElementById('youtube').src = "";
 }
 
 
