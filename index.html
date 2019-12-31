@@ -31,8 +31,8 @@
     <script>
         let AppError = false;
         window.onerror = (e, src, line, col) => {
-            document.querySelector('#sr_intr img').src = "assets/srt.png";
-            document.querySelector('#sr_intr div').innerText = "SkyRoutes";
+            document.querySelector('#sr_intr img').src = "assets/logo.png";
+            document.querySelector('#sr_intr div').innerText = "Dhiyo";
             document.querySelector('#sr_intr').style.display = 'block';
             document.querySelector('#sr_intr p').style.marginTop = "30px";
             if (!AppError) {
@@ -44,15 +44,6 @@
             }
         }
     </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148516528-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-148516528-1');
-    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 

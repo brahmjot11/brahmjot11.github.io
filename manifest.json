@@ -13,7 +13,7 @@
     },
     {
       "src": "assets/sr.png",
-      "sizes": "144x144",
+      "sizes": "143x143",
       "type": "image/png"
     },
     { 
@@ -25,7 +25,11 @@
 
     "assets": [
       "/assets/logo.png",
-      "/assets/videos/intro.mp4"
+      "/assets/videos/intro.mp4",
+      "/assets/videos/m1.mp4",
+      "/assets/videos/m2.mp4",
+      "/assets/videos/m3.mp4",
+      "/assets/videos/m4.mp4"
 
     ],
     

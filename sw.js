@@ -1,14 +1,16 @@
 /*
-    SKYROUTES 2.0.1
+    SKYROUTES 2.0.2
 
     Copyright © 2019 Aakash Pandey. All rights reserved.
     Use of this source code is governed by a license that can be
     found in the LICENSE file.
 
+    https://skyroutes.github.io
+
 */
 
 
-const force_upgrade_string = "Let there be guitar";
+const force_upgrade_string = "Let there be light";
 const sr_version = "2.1";
 let AppCache = [];
 let AppManifest;
@@ -131,11 +133,10 @@ self.addEventListener('message', async (e) => {
         let root = location.pathname.replace('sw.js', '');
         AppCache = [];
         AppManifest.skyroutes.assets.forEach(a => (root==='/') ? AppCache.push(`${a}`):AppCache.push(`${root}${a}`));
-        AppCache.push(`${root}index.html`, `${root}lib/skyroutes.css`, `${root}lib/skyroutes.js`);
 
         cache = await caches.open(sr_version);
 
-        try { await cache.addAll(AppCache); app_error = false }
+        try { await cache.addAll(AppCache); app_error = false;AppCache.push(`${root}index.html`, `${root}lib/skyroutes.css`, `${root}lib/skyroutes.js`); }
         catch (e) {
             console.error('🛑 Asset file error '+e);
             app_error = true
@@ -148,7 +149,7 @@ self.addEventListener('message', async (e) => {
         }
         
 
-    } else if (req === 'atomic' || req === 'touch') {
+    }  else if (req === 'atomic' || req === 'touch') {
 
         if (AppCache.length === 0) {
             let cc = await caches.open(sr_version);
@@ -191,6 +192,17 @@ self.addEventListener('message', async (e) => {
 
 });
 
+self.addEventListener('install', e => {
+    let root = location.pathname.replace('sw.js', '');
+    let preAppCache = [];
+    preAppCache.push(`${root}index.html`, `${root}lib/skyroutes.css`, `${root}lib/skyroutes.js`);
+    const preCache = async () => {
+        const c = await caches.open(sr_version);
+        return c.addAll(preAppCache);
+    };
+    e.waitUntil(preCache());
+})
+
 
 //  jammer gen 5
 
@@ -229,13 +241,13 @@ self.addEventListener('fetch', async e => {
 
     // cache serve
     if (!app_error && AppCache.includes(url.pathname) && serve_cache) {
-        console.log(`📦 ${url}`);
+        // console.log(`📦 ${url}`);
        try {
             e.respondWith(caches.match(url.pathname))
        } catch (e) {}
 
     } else {
         (!grab_navigation) && (grab_navigation = true);
-        console.log(`🌐 ${url}`);     
+        // console.log(`🌐 ${url}`);     
     }
 });

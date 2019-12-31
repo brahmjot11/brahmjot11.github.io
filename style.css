@@ -55,6 +55,7 @@ html, body {
     transition: 0.5s;
     box-shadow: 2px 0px 5px 0px rgba(153, 153, 153, 0.75);
     user-select: none;
+    z-index: 5;
 
 }
 
