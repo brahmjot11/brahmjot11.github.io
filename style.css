@@ -256,7 +256,7 @@ html, body {
 #explainer-embed {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55.5%;
     font-size: 50px;
     color: white;
     transform: translate(-50%,-50%);
@@ -283,6 +283,8 @@ html, body {
     float: right;
     text-decoration: none;
     color: #fff;
+    margin-right: 10%;
+    margin-top: -5%;
 }
 
 #closevid:hover {
@@ -600,7 +602,7 @@ html, body {
 
 #multilang .right {
     position: absolute;
-    left: 66%
+    left: 66%;
 }
 
 #shuff img {
@@ -1935,8 +1937,6 @@ html, body {
         margin-top: -20%;
     }
 
-
-
     #explainer h2 {
         
         font-size: 240%;
@@ -1944,8 +1944,6 @@ html, body {
     #explainer h3{
         font-size: 140%;
     }
-
-    
 
     #about h3 {   
         font-size: 240%;
@@ -1970,8 +1968,6 @@ html, body {
        padding-bottom: 80%;
     }
 
-    
-
     #features .text h2{
         font-size: 140%;
         text-align: center;
@@ -1991,9 +1987,6 @@ html, body {
 
     }  
     
-
-
-
     #vision .text h1{
         font-size: 240%;
         line-height: 40px;
@@ -2009,7 +2002,7 @@ html, body {
     }
 
     #vision img {
-        width: 80%;
+        width: 90%;
         margin-left: 00px;
         float: center;
         padding-top: 100px;
@@ -2018,8 +2011,6 @@ html, body {
         padding-bottom: 60%;
     }
     
-
-
     #multilang .left h2{
         text-align: center;
         font-size: 140%;
@@ -2039,9 +2030,6 @@ html, body {
     #multilang .right{
         margin-left: 27%;
     }
-
-
-
    
     #stat{
         padding-top: 10%;
@@ -2071,8 +2059,6 @@ html, body {
         font-size: 240%;
     }
 
-
-
     #reviews h1{
         font-size: 240%;
         line-height: 35px;
@@ -2080,8 +2066,6 @@ html, body {
     #reviews h2{
         font-size: 140%;
     }
-
-
 
     #awards h1{
         font-size: 240%;
@@ -2106,11 +2090,31 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
             #about{
                 /*margin-bottom: 60%;*/
             }
-            #features .text h1{
-                margin-top: 70px;
+            /*#features .text h1{
+                margin-top: 130px;
+            }*/
+            #features .cards {
+                margin-bottom: 30%;
             }
+            #closevid {
+                margin-right: 5%;
+            }
+            #vision img {
+                transform: scale(1,.8);
+                margin-bottom: -10%;
+            }
+            #reviews {
+                margin-top: -10%;
+            }
+            #contact {
+                margin-top: -20%;
+            }
+            /*#multilang .right #shuff {
+                text-align: center;
+            }*/
+            
 }

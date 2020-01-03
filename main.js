@@ -10,7 +10,6 @@ function closeNav() {
     document.getElementById("drawer").style.width = "0";
 }
 
-
 function explaineron() {
     // document.getElementById('youtube').src = "https://www.youtube.com/embed/FhhrE3OOcAc";
     document.getElementById("explainer-embed-wrap").style.display = "block";
